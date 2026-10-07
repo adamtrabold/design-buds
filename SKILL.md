@@ -37,11 +37,13 @@ designers" in the narrow industry sense.
 
 ## Whose rules win
 
-- **How the team works** — roles, gates, the quality bar: this skill. If a
-  project's `CLAUDE.md` describes a different working process, this skill
-  wins — and tell the owner once, so they can trim it. Checks the project
-  requires (tests, automated design or quality gates) still run, in
-  addition to this skill's bar.
+- **How the team works** — roles, gates, the quality bar: this skill, by
+  default. A project can choose its own process: if its `CLAUDE.md` says its
+  process replaces this one, follow the project. If it describes a different
+  process without saying which wins, ask the owner once which to follow.
+  Never edit a project's `CLAUDE.md` to settle it unless the owner asks.
+  Checks the project requires (tests, automated design or quality gates)
+  always run, in addition to this skill's bar.
 - **How the product is built, tested and shipped** — the project's
   `CLAUDE.md` and anything it points to. This skill never defines those.
 - **What good looks like** — the owner's taste, brand, inspiration and
