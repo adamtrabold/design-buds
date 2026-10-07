@@ -43,6 +43,5 @@ while working on this.
    what has to change.
 3. Then other findings, then nits.
 4. Which checks you ran, and what they cover.
-5. Problems you found outside this work: add them to the project's backlog
-   (its own, or `backlog.md` at the project root) under **Bugs**, **Open
-   tasks** or **Next up**, and list them here.
+5. Problems you found outside this work, under **Bugs**, **Open tasks** or
+   **Next up**. If the project has a backlog, add them to it too.

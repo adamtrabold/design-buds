@@ -39,7 +39,9 @@ designers" in the narrow industry sense.
 
 - **How the team works** — roles, gates, the quality bar: this skill. If a
   project's `CLAUDE.md` describes a different working process, this skill
-  wins.
+  wins — and tell the owner once, so they can trim it. Checks the project
+  requires (tests, automated design or quality gates) still run, in
+  addition to this skill's bar.
 - **How the product is built, tested and shipped** — the project's
   `CLAUDE.md` and anything it points to. This skill never defines those.
 - **What good looks like** — the owner's taste, brand, inspiration and
@@ -63,8 +65,8 @@ one line instead of doing it.
    design call: flag it to the owner instead of deciding it. You check
    small changes yourself against the request and the project's tests. A
    fresh reviewer checks it before it lands when it touches data, login,
-   payments, money or security, spans more than one area of the product, or
-   would be hard to undo.
+   payments, money or security, changes how separate parts of the product
+   work together, or would be hard to undo.
 2. **TWEAK** — a small visual, copy, spacing, colour or size change, or a
    plain UI bug. Just the owner and you as builder: make the change, show
    the owner stills of what changed, and land it under the project's rules
@@ -79,14 +81,15 @@ one line instead of doing it.
 
 When anyone finds a problem outside the work at hand — a bug, a risk, a
 mess worth cleaning up — don't fix it in passing and don't drop it. Add it to
-the project's backlog (its own if it has one; otherwise `backlog.md` at the
-project root) under one of:
+the project's backlog under one of:
 
 - **Bugs** — something broken, with how to reproduce it;
 - **Open tasks** — something that needs doing, with why;
 - **Next up** — what the owner might want to prioritise next.
 
 Mention new entries to the owner in one line when the work is handed back.
+If the project has no backlog, list the items when handing back instead and
+ask whether to start one — don't create the file unasked.
 
 ## Briefing teammates
 

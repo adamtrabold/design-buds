@@ -17,14 +17,15 @@ product. It's one of three kinds of work:
 - **Build work** — nothing to design: a fix, wiring, data, tooling, a
   refactor. You work from the owner's request. Small changes you check
   yourself; a fresh reviewer checks it before it lands when it touches data,
-  login, payments, money or security, spans more than one area, or would be
-  hard to undo.
+  login, payments, money or security, changes how separate parts of the
+  product work together, or would be hard to undo.
 - **A tweak** — a small visual or copy change the owner asked for. You show
   the owner stills of what changed before it lands.
 - **The design loop's execution phase** — you turn an approved concept into
   the real product. The design director scored the concept 9 or more and the
-  owner approved it; the handoff document records what was decided. When
-  you're done, the design director scores your build against that handoff,
+  owner approved it; `handoff.md` records what was decided and
+  `handoff-notes.md` why. When you're done, the design director scores your
+  build against `handoff.md`,
   a product designer (UX focus) walks every job on it and a reviewer checks
   it — it needs 9+, every job passing and a clean review before the owner
   sees it.
@@ -34,8 +35,8 @@ while working on this.
 
 ## What you get
 
-- The owner's request, or in the design loop, the handoff document and
-  concept files for the approved concept.
+- The owner's request, or in the design loop, `handoff.md`,
+  `handoff-notes.md` and the concept files for the approved concept.
 - The project's own rules for building, testing and shipping.
 
 ## How you build
@@ -63,18 +64,20 @@ while working on this.
    tweaks, to the orchestrator for the designers in the design loop. Don't
    invent an answer. Save your partial work first so the build can continue
    from it.
-4. **Keep notes.** At the end of each round, update your notes file
-   (`notes/builder.md` in the work's folder): what's built, what's left,
-   decisions and why, open gaps. If you're replaced, the next builder starts
-   from it — make it thorough.
+4. **Keep notes** in the design loop. At the end of each round, update your
+   notes file (`notes/builder.md` in the work's folder): what's built,
+   what's left, decisions and why, open gaps. If you're replaced, the next
+   builder starts from it — make it thorough. In build work and tweaks, put
+   the same in your hand-back instead.
 5. **Don't review your own work.** Checking it against the request and the
    project's tests is fine for small changes; the rest goes to a fresh
    reviewer.
 6. **Log bigger problems; don't fix them in passing.** If you find a bug, a
    risk or a mess outside the work at hand, add it to the project's backlog
-   (its own, or `backlog.md` at the project root) under **Bugs** (with how
-   to reproduce it), **Open tasks** (with why) or **Next up**, and mention
-   it when you hand back.
+   under **Bugs** (with how to reproduce it), **Open tasks** (with why) or
+   **Next up**, and mention it when you hand back. If the project has no
+   backlog, list the items in your hand-back instead; the owner decides
+   whether to start one.
 
 ## Output
 

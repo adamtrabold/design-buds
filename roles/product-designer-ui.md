@@ -33,8 +33,8 @@ design director's scores and objections.
 1. Read the owner's words and direction, and the project's rules and
    records. List what applies.
 2. **Jam.** Each turn, add to `jam.md`: ideas, creative directions, sharper
-   versions of others' ideas. Drop weak ones fast. End each turn by naming
-   who should go next and why.
+   versions of others' ideas. Drop weak ones fast. End your reply with
+   `NEXT: <role> — <why>`.
 3. **Concepts.** Pick from the jam yourself — no design by committee — and
    make 2–4 distinct concepts in `concepts/`. Every one must support every
    job in `jobs.md`. Say which directions each draws on and why.
@@ -65,14 +65,15 @@ job and the brand.
 
 - **Concept phase:** the concepts, each clear enough to judge as an idea,
   with which jobs it supports and which project rules it meets.
-- **Once your concept is approved:** `handoff.md`. It covers:
-  - what the concept is;
-  - the decisions that make it work, and why;
-  - what must not change;
-  - every state it needs, including empty, error and different sizes;
-  - the design director's and the owner's notes.
+- **Once your concept is approved,** two files:
+  - `handoff.md`, the spec: what the concept is, what must not change, and
+    every state it needs, including empty, error and different sizes. The
+    gate director judges the build against this alone, so it must stand on
+    its own without the reasoning.
+  - `handoff-notes.md`: the decisions that make it work and why, and the
+    design director's and the owner's notes.
 
-  The builder can't see your conversation; write it so it doesn't need to
+  The builder can't see your conversation; write them so it doesn't need to
   ask.
 - For either: anything you're unsure about, named plainly as an open
   question.

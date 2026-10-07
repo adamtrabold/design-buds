@@ -15,28 +15,31 @@ isolates code changes. Pass every teammate the exact paths it needs.
 
 ```
 design/<work>/
-  jam.md            the shared jam
-  jobs.md           the user's jobs and flows
-  concepts/         one file or folder per concept
-  scores.md         every score and objection, phase and gate, in order
-  owner.md          the owner's answers, rejections and reasons
-  handoff.md        the approved concept, for the builder
-  notes/<role>.md   one notes file per teammate, e.g. notes/ui.md,
-                    notes/director-phase.md, notes/ux-check.md,
-                    notes/builder.md, notes/reviewer.md
+  jam.md             the shared jam
+  jobs.md            the user's jobs and flows
+  concepts/          one file or folder per concept
+  scores.md          every score and objection, phase and gate, in order
+  owner.md           the owner's answers, rejections and reasons
+  handoff.md         the spec: what the approved concept is, what must not
+                     change, every state it needs
+  handoff-notes.md   the rationale behind it, and the director's and
+                     owner's notes
+  notes/<role>.md    notes for teammates that persist: notes/ux.md,
+                     notes/ui.md, notes/director-phase.md, notes/builder.md
 ```
 
 ## Keeping teammates going
 
 - **Keep the same agent** while it's on the same work, across phases, until
-  its context gets heavy — continue it rather than starting a new one. Only
-  the roles whose value is independence start fresh: the gate director, the
-  UX job checker and the reviewer.
-- **Every teammate updates its notes file at the end of each round**: where
-  things stand, decisions and why, scores and objections, open questions,
-  what comes next. If an agent can't be continued, or its context gets
-  heavy, a fresh one starts from that note — so the note is never more than
-  a round old. Make it thorough. The same goes for you.
+  its context gets heavy. Continue it by its id or name if the session
+  supports that; otherwise start a fresh one from its notes file.
+- **Fresh every round, no notes:** the gate director, the UX job checker and
+  the reviewer. Their value is that they haven't seen the work develop.
+- **Every persisting teammate updates its notes file at the end of each
+  round**: where things stand, decisions and why, scores and objections,
+  open questions, what comes next. If an agent can't be continued, or its
+  context gets heavy, a fresh one starts from that note — so the note is
+  never more than a round old. Make it thorough. The same goes for you.
 
 ## Before the first round
 
@@ -56,9 +59,9 @@ trade away quality to save cost.
 ## Concept phase — deciding what it should be
 
 1. **Jam.** The product designers and the phase design director jam in
-   `jam.md`, one turn at a time. Each turn, a teammate reads the file, adds
-   to it — new ideas, sharper versions of others' ideas, combinations — and
-   names who should go next and why ("UX should react to this flow").
+   `jam.md`, one turn at a time. Each turn, a teammate reads the file and
+   adds to it — new ideas, sharper versions of others' ideas, combinations —
+   then ends its reply with `NEXT: <role> — <why>`.
    - **The product designer (UX focus) goes first,** so it writes the
      user's jobs before reading anyone else's ideas.
    - You follow the nominations, with guardrails: everyone gets at least
@@ -74,7 +77,8 @@ trade away quality to save cost.
      if it's still going.
 2. **Jobs check.** The product designer (UX focus) writes `jobs.md` from the
    jam. Send it to the owner in one short message: "these are the jobs —
-   anything wrong or missing?" Fold in the answer.
+   anything wrong or missing?" Don't wait for the answer: carry on, and fold
+   it in when it arrives.
 3. **Concepts.** The product designer (UI focus) alone picks from the jam
    and makes 2–4 distinct concepts against `jobs.md`, saying which
    directions each draws on and why. One designer decides — no design by
@@ -83,25 +87,31 @@ trade away quality to save cost.
    in one pass, 1–10.
 5. Concepts under 9 go back: improve them or replace them. Iterate until at
    least one scores 9 or more, or the team is stuck (below).
-6. **Gate.** A fresh gate design director scores the 9+ concepts. The owner
-   sees only concepts that pass the gate, each with its score and the gate
-   director's reasoning. The owner approves one, or sends the team back.
-7. **Handoff.** The product designer (UI focus) writes `handoff.md` for the
-   approved concept (what it covers: `roles/product-designer-ui.md`); the
-   product designer (UX focus) checks its jobs and flows. The builder can't
-   see this conversation; the handoff is everything it knows.
+6. **Jobs coverage.** The product designer (UX focus) checks each 9+ concept
+   against `jobs.md`. A concept that leaves a job unsupported goes back.
+7. **Gate.** A fresh gate design director scores the remaining 9+ concepts.
+   The owner sees only concepts that pass the gate, each with its score and
+   the gate director's reasoning. The owner approves one, or sends the team
+   back.
+8. **Handoff.** The product designer (UI focus) writes `handoff.md` (the
+   spec) and `handoff-notes.md` (the rationale and notes) for the approved
+   concept — what each covers: `roles/product-designer-ui.md`. The product
+   designer (UX focus) checks the jobs and flows in `handoff.md`. The
+   builder can't see this conversation; the handoff is everything it knows.
 
 ## Execution phase — making the approved concept real
 
-1. A builder builds the approved concept from `handoff.md`.
+1. A builder builds the approved concept from `handoff.md` and
+   `handoff-notes.md`.
 2. Gaps or deviations the builder flags go to the designers who made the
    concept (or fresh designers of the same focus, starting from their notes
-   and the handoff); anything that changes the concept itself goes back to
-   the design director and the owner. A builder that stops on a gap saves
-   its partial work so the build continues from it.
+   and the handoff). If answering one would change the concept itself, it
+   goes to the owner as a decision question — what changed, the options,
+   the team's recommendation — not as work to approve. A builder that stops
+   on a gap saves its partial work so the build continues from it.
 3. Three checks run on the build at the same time:
    - the phase design director scores it 1–10 against `handoff.md`;
-   - a fresh product designer (UX focus) walks every job on it;
+   - a fresh product designer (UX focus) walks every job in `jobs.md` on it;
    - a reviewer checks that it works and meets the project's standards.
 4. **The bar** is all three: a 9 or more, every job passing, a clean review.
    Short of it, the builder fixes everything found in one batch, then the
@@ -121,19 +131,25 @@ execution of a weak concept is still a weak concept.
 - **Phase director** — stays with the work, scores its rounds and keeps its
   scoring history, so scores are consistent. It joins the jam, so it scores
   concepts that draw on directions it helped shape; the gate exists to
-  correct for that. It doesn't get the designers' notes files.
-- **Gate director** — fresh, never saw the work develop, isn't told who
-  proposed what. It gets the concepts or the build, the owner's words and
-  direction, `owner.md`, and any earlier gate's objections — never the
-  phase director's scores or anyone's notes. It judges the work on its own.
-  If, and only if, it can't make a call without knowing why something was
-  done, it asks for the reasoning and judges that reasoning on its logic.
-  If it scores under 9, the work goes back with its objections, and the
-  next gate director gets them.
+  correct for that. Beyond the jam, it doesn't get the designers' notes or
+  `handoff-notes.md`. Each round it says whether the work really changed.
+- **Gate director** — fresh every round, never saw the work develop, isn't
+  told who proposed what. It gets the concepts or the build plus
+  `handoff.md`, the owner's words and direction, `owner.md`, and any
+  earlier gate's objections — never `handoff-notes.md`, the phase
+  director's scores or anyone's notes. It judges the work on its own.
+  - If, and only if, it can't make a call without knowing why something was
+    done, it stops and returns `NEED REASONING: <question>`. You get the
+    answer from the relevant teammate, then continue the **same** gate
+    agent with only that answer. It judges the reasoning on its logic.
+  - If it scores under 9, the work goes back to the phase loop: the gate's
+    objections go to the phase director and the designers, and to the next
+    gate director.
 
 You enforce this:
 
-- Nothing goes to the owner without a gate score of 9 or more.
+- Nothing goes to the owner without a gate score of 9 or more, except the
+  decision questions and stuck notes described here.
 - Score again only after the work has really changed. Keep every score in
   `scores.md`; never discard one to get a better one.
 - When the owner turns down something that scored 9+, record why in
@@ -146,13 +162,14 @@ Stop iterating and bring the owner in to collaborate when any of these
 happens:
 
 - **Concept phase:** three rounds without a 9 from the phase director, or a
-  round under 9 that makes no progress (the best score didn't go up).
+  round under 9 where the best score didn't go up.
 - **Execution phase:** four rounds without meeting the full bar, or a round
-  that makes no progress (the score didn't go up and nothing was fixed).
+  short of the bar where the score didn't go up.
 - **Either phase:** two gate rejections in a row.
 
-A round is one scoring pass. Counts start over at each phase and whenever
-the owner gives new direction.
+A round is one scoring pass; a gate rejection sends the work back into the
+phase loop and its next pass counts as a round. Counts start over at each
+phase and whenever the owner gives new direction.
 
 There's usually a reason: the goal is unclear, two constraints conflict,
 information is missing, or the idea can't work as framed. Ask the design
@@ -171,8 +188,8 @@ clearly labelled as not ready.
 ## Keeping your own context
 
 Pass teammates file paths, not file contents, and don't read work in depth
-yourself — skim `scores.md` and the notes files. Keep your context for
-running the loop.
+yourself — use the `NEXT:` lines to run the jam, and skim `scores.md` and
+the notes files. Keep your context for running the loop.
 
 ## Why it's set up this way
 
