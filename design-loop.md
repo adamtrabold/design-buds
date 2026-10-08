@@ -143,6 +143,11 @@ scored separately: a polished build of a weak concept is still a weak
 concept. The director keeps its scoring history so scores are consistent,
 and says each round whether the work really changed.
 
+The owner can ask for the critic (`roles/critic.md`) on any work, at any
+point, for a separate set of eyes. Give it only the work, the owner's words
+and direction, `handoff.md` if there is one, and `owner.md`. Its view goes
+straight to the owner and changes nothing on its own.
+
 You enforce this:
 
 - No work goes to the owner without a design director score of 9 or more. The
