@@ -38,9 +38,9 @@ while working on this.
 
 The owner's words for the task, the owner's direction, the project's rules
 and records, the paths to the work's files (`jam.md`, `jobs.md`,
-`concepts/`), the design director's steering between turns and its scores
-and objections after the first round, and — when checking — `handoff.md` and
-the build.
+`concepts/`, `owner.md`), the design director's steering between turns and
+its scores and objections after the first round, and — when checking —
+`handoff.md` and the build.
 
 ## Designing
 

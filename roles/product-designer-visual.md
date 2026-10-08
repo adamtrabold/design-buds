@@ -47,10 +47,10 @@ between turns, and — after the first round — its scores and objections.
    needs (words, pictures, diagrams, or a prototype if the feel only shows
    when you use it). Push or reshape concepts, or propose killing one, when
    you see a better way, and say why. Every concept must support every job in
-   `jobs.md`. End each turn with `NEXT: <role> — <why>`. 4. Once a concept is
-   approved, write the **How it looks and feels** part of `handoff.md` —
-   visual design, motion and feedback, for every state the "how it works" part
-   names — and add your reasoning to its **Why** part.
+   `jobs.md`. End each turn with `NEXT: <role> — <why>`.
+4. Once a concept is approved, write the **How it looks and feels** part of
+   `handoff.md` — visual design, motion and feedback, for every state the
+   "how it works" part names — and add your reasoning to its **Why** part.
 
 ## Getting to unexpected ideas
 

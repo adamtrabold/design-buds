@@ -84,12 +84,13 @@ alone.
      sharper; drop weak ideas fast rather than polishing them; never settle
      on the idea everyone can live with. The jam ends after its passes even
      if it's still going.
-2. **Jobs check.** The product designer (systems focus) writes `jobs.md`
+2. **Jobs to the owner.** The product designer (systems focus) writes `jobs.md`
    from the jam. Send it to the owner in one short message: "these are the
    jobs — anything wrong or missing?" Don't wait for the answer: carry on,
    and fold it in when it arrives.
 3. **Concepts.** The two product designers build 2–4 distinct concepts
-   together in `concepts/`, taking turns with the same `NEXT:` relay: the
+   together in `concepts/`, taking turns with the same `NEXT:` relay (the
+   systems designer starts): the
    systems designer on how each one works, the visual designer on how it
    looks and feels. Either can push or reshape any concept, or propose
    killing one, and says why in the concept file. Each concept says which
@@ -132,6 +133,8 @@ alone.
    decision question — what changed, the options,
    the team's recommendation — not as work to approve. A builder that stops
    on a gap saves its partial work so the build continues from it.
+   Answers to gaps are added to `handoff.md`, so it stays the builder's
+   single source.
 3. Three checks run on the build at the same time:
    - the design director scores it 1–10 against `handoff.md`;
    - the jobs checker walks every job in `jobs.md` on it;
@@ -140,7 +143,9 @@ alone.
    Short of it, the builder fixes everything found in one batch, then the
    checks run again. Repeat until the bar is met, or the team is stuck.
 5. **Owner.** Once the bar is met, the owner sees the finished work; on the
-   owner's "yes", it lands under the project's rules.
+   owner's "yes", it lands under the project's rules. On a no, record why in
+   `owner.md`; the design director decides whether it's a fix to the build
+   (back to step 4) or a change to the concept (back to the concept phase).
 
 ## Quality bar
 
@@ -163,8 +168,9 @@ owner is the independent check, and the critic is there when they want one.
 You enforce this:
 
 - No work goes to the owner without a design director score of 9 or more. The
-  only other messages in the loop are the jobs check, foundation questions,
-  decision questions, stuck notes, and critic reports the owner asked for.
+  only other messages in the loop are the jobs sent to the owner, foundation
+  questions, decision questions, stuck notes, and critic reports the owner
+  asked for.
 - Score again only after the work has really changed. Keep every score in
   `scores.md`; never discard one to get a better one.
 - When the owner turns down something that scored 9+, record why in

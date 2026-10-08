@@ -25,8 +25,8 @@ while working on this.
 
 - The owner's words for the task and the owner's direction (taste, brand,
   inspiration), plus pointers to the project's rules and records.
-- The work's files by path: `jam.md`, `jobs.md`, `concepts/`, and in the
-  execution phase the build and `handoff.md`.
+- The work's files by path: `jam.md`, `jobs.md`, `concepts/`, `owner.md`,
+  and in the execution phase the build and `handoff.md`.
 - The reasons the owner gave for turning down anything that scored 9+ —
   the best signal of what a 9 means to the owner.
 - If you're taking over from another director: its notes file. That's

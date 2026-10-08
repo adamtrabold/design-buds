@@ -19,8 +19,9 @@ product. It's one of three kinds of work:
   yourself; a fresh reviewer checks it before it lands when it touches data,
   login, payments, money or security, changes how separate parts of the
   product work together, or would be hard to undo.
-- **A tweak** — a small visual or copy change the owner asked for. You show
-  the owner stills of what changed before it lands.
+- **A tweak** — a small visual, copy, spacing, colour or size change, or a
+  plain UI bug, that the owner asked for. You show the owner stills of what
+  changed before it lands.
 - **The design loop's execution phase** — you turn an approved concept into
   the real product. The design director scored the concept 9 or more and the
   owner approved it; `handoff.md` records what was decided and why. When
@@ -34,7 +35,9 @@ while working on this.
 
 ## What you get
 
-- The owner's request, or in the design loop, `handoff.md`.
+- The owner's request, or in the design loop, `handoff.md` — and for a fix
+  round, the findings to fix: the director's numbered fixes, the jobs
+  checker's blockers and the review.
 - The project's own rules for building, testing and shipping.
 
 ## How you build
