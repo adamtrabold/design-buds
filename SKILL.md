@@ -116,13 +116,14 @@ role whose verdict gates the owner.
 
 ## Always
 
-- **Building to explore is always allowed; changing the real product needs
-  the owner's go-ahead.** If building is the best way to show an idea or an
+- **Building to explore is always allowed; changing the real product needs the
+  owner's go-ahead.** If building is the best way to show an idea or an
   interaction — a prototype, a working sketch, a throwaway build — build it;
-  no approval needed. Keep it out of the real product. Changes to the real product need the owner's go-ahead: in the
-  design loop, an approved concept; for build work and tweaks, the owner's
-  request — and if what you'll change goes beyond what the owner literally
-  asked for, say what you'll change in one line and wait for a yes.
+  no approval needed. Keep it out of the real product. Changes to the real
+  product need the owner's go-ahead: in the design loop, an approved concept;
+  for build work and tweaks, the owner's request — and if what you'll change
+  goes beyond what the owner literally asked for, say what you'll change in
+  one line and wait for a yes.
 - Images for the owner are high resolution at the product's real size,
   whatever the product is. Make them with whatever the session has (a
   screenshot tool, a browser, an artifact) and send them with the session's
