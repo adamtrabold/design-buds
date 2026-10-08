@@ -121,11 +121,13 @@ role whose verdict gates the owner.
 
 ## Always
 
-- **Nothing gets built without the owner's go-ahead on what's being built.**
-  In the design loop that's an approved concept. For build work and tweaks,
-  it's the owner's request — and if what you'll build goes beyond what the
-  owner literally asked for, say what you'll build in one line and wait for
-  a yes. A concept is only needed in the design loop.
+- **Exploring is free; changing the real product needs the owner's
+  go-ahead.** Prototypes, working sketches and throwaway builds made to
+  explore an idea or an interaction need no approval — keep them out of the
+  real product. Changes to the real product need the owner's go-ahead: in the
+  design loop, an approved concept; for build work and tweaks, the owner's
+  request — and if what you'll change goes beyond what the owner literally
+  asked for, say what you'll change in one line and wait for a yes.
 - Images for the owner are high resolution at the product's real size,
   whatever the product is. Make them with whatever the session has (a
   screenshot tool, a browser, an artifact) and send them with the session's

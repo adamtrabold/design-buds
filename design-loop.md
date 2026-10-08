@@ -2,8 +2,10 @@
 
 For anything new to design: a feature, a new look, a redesign. You, the
 orchestrator, run it; teammates design and build. Two phases, concept then
-execution. Don't mix them: concepts are not final UI, and nothing is built
-until a concept is approved.
+execution. Don't mix them: concepts are not final UI, and nothing changes in
+the real product until a concept is approved. Exploring is different:
+concepts can be built as prototypes whenever that's the best way to show
+them.
 
 ## The work folder
 
@@ -55,8 +57,9 @@ the owner is told that early scores are provisional.
 ## Fidelity
 
 Make each piece of work at the fidelity the feedback needs. Concepts can be
-words, pictures, diagrams, or a prototype if the idea only shows when you
-use it; execution is the real thing. Don't go to full polish when a sketch
+words, pictures, diagrams, or a working prototype when the idea or the
+interaction only shows when you use it — built outside the real product, so
+it can be thrown away. Execution is the real thing. Don't go to full polish when a sketch
 answers the question — and don't hold back when the work needs it. Never
 trade away quality to save cost.
 
