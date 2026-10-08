@@ -18,14 +18,16 @@ design/<work>/
   jam.md             the shared jam
   jobs.md            the user's jobs and flows
   concepts/          one file or folder per concept
-  scores.md          every score and objection, phase and gate, in order
+  scores.md          every score and objection, phase and gate, in order;
+                     you write it
   owner.md           the owner's answers, rejections and reasons
   handoff.md         the spec: what the approved concept is, what must not
                      change, every state it needs
   handoff-notes.md   the rationale behind it, and the director's and
                      owner's notes
   notes/<role>.md    notes for teammates that persist: notes/ux.md,
-                     notes/ui.md, notes/director-phase.md, notes/builder.md
+                     notes/ui.md, notes/director-phase.md, notes/builder.md,
+                     and yours, notes/orchestrator.md
 ```
 
 ## Keeping teammates going
@@ -33,13 +35,16 @@ design/<work>/
 - **Keep the same agent** while it's on the same work, across phases, until
   its context gets heavy. Continue it by its id or name if the session
   supports that; otherwise start a fresh one from its notes file.
-- **Fresh every round, no notes:** the gate director, the UX job checker and
-  the reviewer. Their value is that they haven't seen the work develop.
+- **Fresh every round, no notes:** the gate director, the UX checker (a
+  fresh product designer, UX focus) and the reviewer. Their value is that
+  they haven't seen the work develop. Give them only the files they need, by
+  path; they don't browse the work folder.
 - **Every persisting teammate updates its notes file at the end of each
   round**: where things stand, decisions and why, scores and objections,
   open questions, what comes next. If an agent can't be continued, or its
   context gets heavy, a fresh one starts from that note — so the note is
-  never more than a round old. Make it thorough. The same goes for you.
+  never more than a round old. Make it thorough. The same goes for you, in
+  `notes/orchestrator.md`.
 
 ## Before the first round
 
@@ -96,7 +101,8 @@ trade away quality to save cost.
 8. **Handoff.** The product designer (UI focus) writes `handoff.md` (the
    spec) and `handoff-notes.md` (the rationale and notes) for the approved
    concept — what each covers: `roles/product-designer-ui.md`. The product
-   designer (UX focus) checks the jobs and flows in `handoff.md`. The
+   designer (UX focus) checks the jobs and flows in `handoff.md`; gaps go
+   back to the product designer (UI focus) before the build starts. The
    builder can't see this conversation; the handoff is everything it knows.
 
 ## Execution phase — making the approved concept real
@@ -111,7 +117,7 @@ trade away quality to save cost.
    on a gap saves its partial work so the build continues from it.
 3. Three checks run on the build at the same time:
    - the phase design director scores it 1–10 against `handoff.md`;
-   - a fresh product designer (UX focus) walks every job in `jobs.md` on it;
+   - the UX checker walks every job in `jobs.md` on it;
    - a reviewer checks that it works and meets the project's standards.
 4. **The bar** is all three: a 9 or more, every job passing, a clean review.
    Short of it, the builder fixes everything found in one batch, then the
@@ -141,14 +147,17 @@ execution of a weak concept is still a weak concept.
   - If, and only if, it can't make a call without knowing why something was
     done, it stops and returns `NEED REASONING: <question>`. You get the
     answer from the relevant teammate, then continue the **same** gate
-    agent with only that answer. It judges the reasoning on its logic.
+    agent with only that answer; if it can't be continued, start a fresh
+    gate director with the same inputs plus the question and answer. It
+    judges the reasoning on its logic.
   - If it scores under 9, the work goes back to the phase loop: the gate's
     objections go to the phase director and the designers, and to the next
     gate director.
 
 You enforce this:
 
-- Nothing goes to the owner without a gate score of 9 or more, except the
+- No work goes to the owner without a gate score of 9 or more. The only
+  other messages in the loop are the jobs check, foundation questions,
   decision questions and stuck notes described here.
 - Score again only after the work has really changed. Keep every score in
   `scores.md`; never discard one to get a better one.
@@ -164,7 +173,8 @@ happens:
 - **Concept phase:** three rounds without a 9 from the phase director, or a
   round under 9 where the best score didn't go up.
 - **Execution phase:** four rounds without meeting the full bar, or a round
-  short of the bar where the score didn't go up.
+  short of the bar that made no progress — the score didn't go up and the
+  number of open blockers (failed jobs plus review blockers) didn't fall.
 - **Either phase:** two gate rejections in a row.
 
 A round is one scoring pass; a gate rejection sends the work back into the

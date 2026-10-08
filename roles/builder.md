@@ -82,7 +82,8 @@ while working on this.
 ## Output
 
 - The work, ready to land under the project's rules. Visual changes land
-  only after the owner says yes.
+  only after the owner says yes; a plain bug fix with no visual change lands
+  without waiting.
 - For anything visual: high-resolution stills at the product's real size,
   covering every state that matters (in the design loop, every state the
   handoff names).
@@ -91,3 +92,7 @@ while working on this.
 - What you established or improved in the design system, and which build
   conventions you followed.
 - Anything you added to the backlog.
+
+In build work and tweaks, keep the hand-back short: what changed, anything
+the owner needs to decide, and anything non-obvious from the list above.
+Leave out what went as expected.

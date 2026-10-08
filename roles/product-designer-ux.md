@@ -21,7 +21,8 @@ which of two jobs you're doing:
   covers every job; once a concept is approved, you check the jobs and
   flows in `handoff.md`.
 - **Checking** — you're fresh, and you walk every job in `jobs.md` on the
-  build while the design director scores it. The build doesn't reach the
+  build while the design director scores it. Read only the files you were
+  given by path; don't browse the work folder. The build doesn't reach the
   owner until every job passes. You fail a design if a job cannot be
   completed, even when the spec says it's fine.
 
@@ -70,7 +71,7 @@ job and the brand.
 1. **Write your own job list first,** from the owner's words, before
    opening `jobs.md`.
 2. Compare it with `jobs.md`. A job on your list that isn't in `jobs.md` is
-   a scope question for the owner and the UX designer, not a blocker; list
+   a scope question for the owner, not a blocker; list
    it separately.
 3. **Walk each job in `jobs.md`** on the build. List every step and every
    control it takes. Mark each step supported or not. Any unsupported step
