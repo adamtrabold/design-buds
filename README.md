@@ -2,8 +2,8 @@
 
 A Claude skill describing a product team and how it works: an orchestrator,
 two product designers (systems focus, visual focus), a design director, a
-builder, a reviewer and an on-request critic, with three ways of working — build, tweak and the
-design loop.
+builder, a reviewer and an on-request critic, with three ways of working —
+build, tweak and the design loop.
 
 - `SKILL.md` — the team, whose rules win, how work runs, briefing, the
   "always" list. Loaded whenever working on a product.
