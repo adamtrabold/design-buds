@@ -18,7 +18,7 @@ design/<work>/
   jam.md             the shared jam
   jobs.md            the user's jobs and flows
   concepts/          one file or folder per concept
-  scores.md          every score and objection, phase and gate, in order;
+  scores.md          every score and objection, director and critic, in order;
                      you write it
   owner.md           the owner's answers, rejections and reasons
   handoff.md         the spec: what the approved concept is, what must not
@@ -26,7 +26,7 @@ design/<work>/
   handoff-notes.md   the rationale behind it, and the director's and
                      owner's notes
   notes/<role>.md    notes for teammates that persist: notes/systems.md,
-                     notes/visual.md, notes/director-phase.md,
+                     notes/visual.md, notes/director.md,
                      notes/builder.md,
                      and yours, notes/orchestrator.md
 ```
@@ -36,7 +36,7 @@ design/<work>/
 - **Keep the same agent** while it's on the same work, across phases, until
   its context gets heavy. Continue it by its id or name if the session
   supports that; otherwise start a fresh one from its notes file.
-- **Fresh every round, no notes:** the gate director, the jobs checker (a
+- **Fresh every round, no notes:** the critic, the jobs checker (a
   fresh product designer, systems focus) and the reviewer. Their value is that
   they haven't seen the work develop. Give them only the files they need, by
   path; they don't browse the work folder.
@@ -64,12 +64,12 @@ trade away quality to save cost.
 
 ## Concept phase — deciding what it should be
 
-The phase design director owns this phase's outcome: delivering the best
+The design director owns this phase's outcome: delivering the best
 concepts. It steers the team and decides which concepts go forward. The two
 product designers build every concept together — neither makes the call
 alone.
 
-1. **Jam.** The product designers and the phase design director jam in
+1. **Jam.** The product designers and the design director jam in
    `jam.md`, one turn at a time. Each turn, a teammate reads the file and
    adds to it — new ideas, sharper versions of others' ideas, combinations —
    then ends its reply with `NEXT: <role> — <why>`.
@@ -95,18 +95,18 @@ alone.
    systems designer on how each one works, the visual designer on how it
    looks and feels. Either can push, reshape or kill any concept, and says
    why in the concept file. Each concept says which directions it draws on.
-   The phase director steers between turns and decides which concepts go
+   The design director steers between turns and decides which concepts go
    forward to scoring.
-4. **Score.** The phase design director scores all of the round's concepts
+4. **Score.** The design director scores all of the round's concepts
    in one pass, 1–10.
 5. Concepts under 9 go back: improve them or replace them. Iterate until at
    least one scores 9 or more, or the team is stuck (below).
 6. **Jobs coverage.** The product designer (systems focus) checks each 9+
    concept against `jobs.md`. A concept that leaves a job unsupported goes
    back.
-7. **Gate.** A fresh gate design director scores the remaining 9+ concepts.
-   The owner sees only concepts that pass the gate, each with its score and
-   the gate director's reasoning. The owner approves one, or sends the team
+7. **Critic.** The critic scores the remaining 9+ concepts.
+   The owner sees only concepts the critic scored 9+, each with its score
+   and the critic's reasoning. The owner approves one, or sends the team
    back.
 8. **Handoff.** The two product designers write `handoff.md` (the spec) for
    the approved concept: the systems designer the **How it works** part
@@ -128,47 +128,46 @@ alone.
    the team's recommendation — not as work to approve. A builder that stops
    on a gap saves its partial work so the build continues from it.
 3. Three checks run on the build at the same time:
-   - the phase design director scores it 1–10 against `handoff.md`;
+   - the design director scores it 1–10 against `handoff.md`;
    - the jobs checker walks every job in `jobs.md` on it;
    - a reviewer checks that it works and meets the project's standards.
 4. **The bar** is all three: a 9 or more, every job passing, a clean review.
    Short of it, the builder fixes everything found in one batch, then the
    checks run again. Repeat until the bar is met, or the team is stuck.
-5. **Gate.** A fresh gate design director scores it. At 9+, the owner sees
-   the finished work; on the owner's "yes", it lands under the project's
+5. **Critic.** The critic scores it. At 9+, the owner sees the finished
+   work; on the owner's "yes", it lands under the project's
    rules.
 
 ## Quality bar
 
-The design director has the final say on quality before the owner. Every
-concept and every execution gets a score from 1 to 10, where 9 means "I
+Every concept and every build gets a score from 1 to 10, where 9 means "I
 would defend this to the owner as is". **The owner never sees anything that
-scored under 9.** Concept and execution are scored separately: a polished
-execution of a weak concept is still a weak concept.
+scored under 9.** Concept and build are scored separately: a polished build
+of a weak concept is still a weak concept. Two people score, on the same
+standard, for different reasons:
 
-- **Phase director** — stays with the work, scores its rounds and keeps its
-  scoring history, so scores are consistent. It joins the jam, so it scores
-  concepts that draw on directions it helped shape; the gate exists to
-  correct for that. Beyond the jam, it doesn't get the designers' notes or
-  `handoff-notes.md`. Each round it says whether the work really changed.
-- **Gate director** — fresh every round, never saw the work develop, isn't
-  told who proposed what. It gets the concepts or the build plus
-  `handoff.md`, the owner's words and direction, `owner.md`, and any
-  earlier gate's objections — never `handoff-notes.md`, the phase
-  director's scores or anyone's notes. It judges the work on its own.
+- **Design director** (`roles/design-director.md`) — leads the team and
+  stays with the work. Its score drives the iteration: work goes round
+  until it gives a 9. It keeps its scoring history so scores are
+  consistent, and says each round whether the work really changed. Because
+  it helped shape the work, its 9 is necessary but not enough.
+- **Critic** (`roles/critic.md`) — fresh every time, never saw the work
+  develop, isn't told who proposed what. Its score decides whether the
+  owner sees the work. It gets the concepts or the build plus `handoff.md`,
+  the owner's words and direction, `owner.md`, and any earlier critic's
+  objections — never `handoff-notes.md`, the team's scores or anyone's
+  notes.
   - If, and only if, it can't make a call without knowing why something was
-    done, it stops and returns `NEED REASONING: <question>`. You get the
-    answer from the relevant teammate, then continue the **same** gate
-    agent with only that answer; if it can't be continued, start a fresh
-    gate director with the same inputs plus the question and answer. It
-    judges the reasoning on its logic.
-  - If it scores under 9, the work goes back to the phase loop: the gate's
-    objections go to the phase director and the designers, and to the next
-    gate director.
+    done, it returns `NEED REASONING: <question>`. Get the answer from the
+    relevant teammate, then continue the **same** critic with only that
+    answer; if it can't be continued, start a fresh critic with the same
+    inputs plus the question and answer.
+  - If it scores under 9, the work goes back to the team: its objections go
+    to the design director and the designers, and to the next critic.
 
 You enforce this:
 
-- No work goes to the owner without a gate score of 9 or more. The only
+- No work goes to the owner without a critic score of 9 or more. The only
   other messages in the loop are the jobs check, foundation questions,
   decision questions and stuck notes described here.
 - Score again only after the work has really changed. Keep every score in
@@ -182,15 +181,15 @@ You enforce this:
 Stop iterating and bring the owner in to collaborate when any of these
 happens:
 
-- **Concept phase:** three rounds without a 9 from the phase director, or a
+- **Concept phase:** three rounds without a 9 from the design director, or a
   round under 9 where the best score didn't go up.
 - **Execution phase:** four rounds without meeting the full bar, or a round
   short of the bar that made no progress — the score didn't go up and the
   number of open blockers (failed jobs plus review blockers) didn't fall.
-- **Either phase:** two gate rejections in a row.
+- **Either phase:** two critic rejections in a row.
 
-A round is one scoring pass; a gate rejection sends the work back into the
-phase loop and its next pass counts as a round. Counts start over at each
+A round is one scoring pass; a critic rejection sends the work back to the
+team and its next pass counts as a round. Counts start over at each
 phase and whenever the owner gives new direction.
 
 There's usually a reason: the goal is unclear, two constraints conflict,

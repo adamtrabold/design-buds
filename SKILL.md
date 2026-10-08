@@ -1,6 +1,6 @@
 ---
 name: design-buds
-description: The owner's product team and how it works — the orchestrator (the main session), product designers (systems focus, visual focus), a design director, a builder and a reviewer; three ways of working (build, tweak, design loop). Use whenever working on a product or project.
+description: The owner's product team and how it works — the orchestrator (the main session), product designers (systems focus, visual focus), a design director, a critic, a builder and a reviewer; three ways of working (build, tweak, design loop). Use whenever working on a product or project.
 ---
 
 # Design buds
@@ -26,11 +26,13 @@ while working on this.
   `roles/product-designer-visual.md`
 - **Design director** — the whole experience end to end, as a product and a
   brand, and what it means to the people who use it; owns delivering the
-  best concepts and has the final say on quality before the owner.
+  best concepts and scores every round.
   `roles/design-director.md`
 - **Builder** — builds into the real product to brand standards and the
   build approach's best practices; makes no design calls.
   `roles/builder.md`
+- **Critic** — a fresh pair of eyes that scores work on the design
+  director's standard right before the owner sees it. `roles/critic.md`
 - **Reviewer** — checks built work does what was asked and doesn't break
   anything. `roles/reviewer.md`
 

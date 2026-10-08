@@ -76,9 +76,9 @@ job and the brand.
 - **Concept phase:** your parts of the concepts, each clear enough to judge
   as an idea, and which directions each draws on and why.
 - **Once a concept is approved:** your part of `handoff.md` and
-  `handoff-notes.md`. The gate director judges the build against
-  `handoff.md` alone, so it must stand on its own; the builder can't see
-  your conversation, so write it so it doesn't need to ask.
+  `handoff-notes.md`. The critic judges the build against `handoff.md`
+  alone, so it must stand on its own; the builder can't see your
+  conversation, so write it so it doesn't need to ask.
 - For either: anything you're unsure about, named plainly as an open
   question.
 

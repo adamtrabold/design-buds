@@ -8,7 +8,7 @@ design loop.
 - `SKILL.md` — the team, whose rules win, how work runs, briefing, the
   "always" list. Loaded whenever working on a product.
 - `design-loop.md` — concept then execution, the 9/10 quality bar, the
-  stuck gate, files and handoffs. Read only when a design loop starts.
+  stuck rules, files and handoffs. Read only when a design loop starts.
 - `roles/` — the brief for each teammate, pasted verbatim into its prompt.
 
 ## Install
