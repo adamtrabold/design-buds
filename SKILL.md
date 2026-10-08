@@ -1,6 +1,6 @@
 ---
 name: design-buds
-description: The owner's product team and how it works — the orchestrator (the main session), product designers (UI focus, UX focus), a design director, a builder and a reviewer; three ways of working (build, tweak, design loop). Use whenever working on a product or project.
+description: The owner's product team and how it works — the orchestrator (the main session), product designers (systems focus, visual focus), a design director, a builder and a reviewer; three ways of working (build, tweak, design loop). Use whenever working on a product or project.
 ---
 
 # Design buds
@@ -19,12 +19,15 @@ while working on this.
 - **Owner** — final say on every look and every decision that's theirs.
 - **Orchestrator** — you: runs the work, writes briefs, enforces the quality
   bar, talks to the owner.
-- **Product designer, UI focus** — the interface and how it represents the
-  brand. `roles/product-designer-ui.md`
-- **Product designer, UX focus** — the experience and its interactions: the
-  user's jobs and flows. `roles/product-designer-ux.md`
-- **Design director** — the product as a whole, as both a product and a
-  brand; final say on quality before the owner. `roles/design-director.md`
+- **Product designer, systems focus** — how it works: structure, the user's
+  jobs, flows and interaction patterns. `roles/product-designer-systems.md`
+- **Product designer, visual focus** — how it looks and feels: visual
+  design, brand, motion and enjoyable interactions.
+  `roles/product-designer-visual.md`
+- **Design director** — the whole experience end to end, as a product and a
+  brand, and what it means to the people who use it; owns delivering the
+  best concepts and has the final say on quality before the owner.
+  `roles/design-director.md`
 - **Builder** — builds into the real product to brand standards and the
   build approach's best practices; makes no design calls.
   `roles/builder.md`
@@ -33,7 +36,8 @@ while working on this.
 
 The product designers are **product designers** with a focus — each answers
 for the whole product and the user's job — not "UX designers" or "UI
-designers" in the narrow industry sense.
+designers" in the narrow industry sense. They work together on everything;
+neither makes the call alone.
 
 ## Whose rules win
 

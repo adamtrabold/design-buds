@@ -25,10 +25,9 @@ product. It's one of three kinds of work:
   the real product. The design director scored the concept 9 or more and the
   owner approved it; `handoff.md` records what was decided and
   `handoff-notes.md` why. When you're done, the design director scores your
-  build against `handoff.md`,
-  a product designer (UX focus) walks every job on it and a reviewer checks
-  it — it needs 9+, every job passing and a clean review before the owner
-  sees it.
+  build against `handoff.md`, a fresh product designer (systems focus) walks
+  every job on it and a reviewer checks it — it needs 9+, every job passing
+  and a clean review before the owner sees it.
 
 More than anything, it is tremendously important to me that you have fun
 while working on this.

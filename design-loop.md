@@ -25,8 +25,9 @@ design/<work>/
                      change, every state it needs
   handoff-notes.md   the rationale behind it, and the director's and
                      owner's notes
-  notes/<role>.md    notes for teammates that persist: notes/ux.md,
-                     notes/ui.md, notes/director-phase.md, notes/builder.md,
+  notes/<role>.md    notes for teammates that persist: notes/systems.md,
+                     notes/visual.md, notes/director-phase.md,
+                     notes/builder.md,
                      and yours, notes/orchestrator.md
 ```
 
@@ -35,8 +36,8 @@ design/<work>/
 - **Keep the same agent** while it's on the same work, across phases, until
   its context gets heavy. Continue it by its id or name if the session
   supports that; otherwise start a fresh one from its notes file.
-- **Fresh every round, no notes:** the gate director, the UX checker (a
-  fresh product designer, UX focus) and the reviewer. Their value is that
+- **Fresh every round, no notes:** the gate director, the jobs checker (a
+  fresh product designer, systems focus) and the reviewer. Their value is that
   they haven't seen the work develop. Give them only the files they need, by
   path; they don't browse the work folder.
 - **Every persisting teammate updates its notes file at the end of each
@@ -63,11 +64,16 @@ trade away quality to save cost.
 
 ## Concept phase — deciding what it should be
 
+The phase design director owns this phase's outcome: delivering the best
+concepts. It steers the team and decides which concepts go forward. The two
+product designers build every concept together — neither makes the call
+alone.
+
 1. **Jam.** The product designers and the phase design director jam in
    `jam.md`, one turn at a time. Each turn, a teammate reads the file and
    adds to it — new ideas, sharper versions of others' ideas, combinations —
    then ends its reply with `NEXT: <role> — <why>`.
-   - **The product designer (UX focus) goes first,** so it writes the
+   - **The product designer (systems focus) goes first,** so it writes the
      user's jobs before reading anyone else's ideas.
    - You follow the nominations, with guardrails: everyone gets at least
      one turn per pass, nobody goes twice in a row, and a pass is over once
@@ -80,30 +86,36 @@ trade away quality to save cost.
      sharper; drop weak ideas fast rather than polishing them; never settle
      on the idea everyone can live with. The jam ends after its passes even
      if it's still going.
-2. **Jobs check.** The product designer (UX focus) writes `jobs.md` from the
-   jam. Send it to the owner in one short message: "these are the jobs —
-   anything wrong or missing?" Don't wait for the answer: carry on, and fold
-   it in when it arrives.
-3. **Concepts.** The product designer (UI focus) alone picks from the jam
-   and makes 2–4 distinct concepts against `jobs.md`, saying which
-   directions each draws on and why. One designer decides — no design by
-   committee.
+2. **Jobs check.** The product designer (systems focus) writes `jobs.md`
+   from the jam. Send it to the owner in one short message: "these are the
+   jobs — anything wrong or missing?" Don't wait for the answer: carry on,
+   and fold it in when it arrives.
+3. **Concepts.** The two product designers build 2–4 distinct concepts
+   together in `concepts/`, taking turns with the same `NEXT:` relay: the
+   systems designer on how each one works, the visual designer on how it
+   looks and feels. Either can push, reshape or kill any concept, and says
+   why in the concept file. Each concept says which directions it draws on.
+   The phase director steers between turns and decides which concepts go
+   forward to scoring.
 4. **Score.** The phase design director scores all of the round's concepts
    in one pass, 1–10.
 5. Concepts under 9 go back: improve them or replace them. Iterate until at
    least one scores 9 or more, or the team is stuck (below).
-6. **Jobs coverage.** The product designer (UX focus) checks each 9+ concept
-   against `jobs.md`. A concept that leaves a job unsupported goes back.
+6. **Jobs coverage.** The product designer (systems focus) checks each 9+
+   concept against `jobs.md`. A concept that leaves a job unsupported goes
+   back.
 7. **Gate.** A fresh gate design director scores the remaining 9+ concepts.
    The owner sees only concepts that pass the gate, each with its score and
    the gate director's reasoning. The owner approves one, or sends the team
    back.
-8. **Handoff.** The product designer (UI focus) writes `handoff.md` (the
-   spec) and `handoff-notes.md` (the rationale and notes) for the approved
-   concept — what each covers: `roles/product-designer-ui.md`. The product
-   designer (UX focus) checks the jobs and flows in `handoff.md`; gaps go
-   back to the product designer (UI focus) before the build starts. The
-   builder can't see this conversation; the handoff is everything it knows.
+8. **Handoff.** The two product designers write `handoff.md` (the spec) for
+   the approved concept: the systems designer the **How it works** part
+   (structure, flows, interaction patterns, every state), the visual
+   designer the **How it looks and feels** part (visual design, motion,
+   feedback). Both add their reasoning to `handoff-notes.md`. The systems
+   designer checks the whole handoff against `jobs.md`; gaps are fixed
+   before the build starts. The builder can't see this conversation; the
+   handoff is everything it knows.
 
 ## Execution phase — making the approved concept real
 
@@ -117,7 +129,7 @@ trade away quality to save cost.
    on a gap saves its partial work so the build continues from it.
 3. Three checks run on the build at the same time:
    - the phase design director scores it 1–10 against `handoff.md`;
-   - the UX checker walks every job in `jobs.md` on it;
+   - the jobs checker walks every job in `jobs.md` on it;
    - a reviewer checks that it works and meets the project's standards.
 4. **The bar** is all three: a 9 or more, every job passing, a clean review.
    Short of it, the builder fixes everything found in one batch, then the
