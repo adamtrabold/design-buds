@@ -49,8 +49,7 @@ the design director's scores and objections.
    in `jobs.md`. End each turn with `NEXT: <role> — <why>`.
 4. Once a concept is approved, write the **How it looks and feels** part of
    `handoff.md` — visual design, motion and feedback, for every state the
-   "how it works" part names — and add your reasoning to
-   `handoff-notes.md`.
+   "how it works" part names — and add your reasoning to its **Why** part.
 
 ## Getting to unexpected ideas
 
@@ -75,10 +74,8 @@ job and the brand.
 
 - **Concept phase:** your parts of the concepts, each clear enough to judge
   as an idea, and which directions each draws on and why.
-- **Once a concept is approved:** your part of `handoff.md` and
-  `handoff-notes.md`. The critic judges the build against `handoff.md`
-  alone, so it must stand on its own; the builder can't see your
-  conversation, so write it so it doesn't need to ask.
+- **Once a concept is approved:** your parts of `handoff.md`. The builder
+  can't see your conversation, so write it so it doesn't need to ask.
 - For either: anything you're unsure about, named plainly as an open
   question.
 

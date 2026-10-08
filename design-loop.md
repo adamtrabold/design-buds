@@ -18,13 +18,11 @@ design/<work>/
   jam.md             the shared jam
   jobs.md            the user's jobs and flows
   concepts/          one file or folder per concept
-  scores.md          every score and objection, director and critic, in order;
+  scores.md          every score and objection, in order;
                      you write it
   owner.md           the owner's answers, rejections and reasons
-  handoff.md         the spec: what the approved concept is, what must not
-                     change, every state it needs
-  handoff-notes.md   the rationale behind it, and the director's and
-                     owner's notes
+  handoff.md         the approved concept, for the builder: how it works,
+                     how it looks and feels, and why
   notes/<role>.md    notes for teammates that persist: notes/systems.md,
                      notes/visual.md, notes/director.md,
                      notes/builder.md,
@@ -36,7 +34,7 @@ design/<work>/
 - **Keep the same agent** while it's on the same work, across phases, until
   its context gets heavy. Continue it by its id or name if the session
   supports that; otherwise start a fresh one from its notes file.
-- **Fresh every round, no notes:** the critic, the jobs checker (a
+- **Fresh every round, no notes:** the jobs checker (a
   fresh product designer, systems focus) and the reviewer. Their value is that
   they haven't seen the work develop. Give them only the files they need, by
   path; they don't browse the work folder.
@@ -104,23 +102,22 @@ alone.
 6. **Jobs coverage.** The product designer (systems focus) checks each 9+
    concept against `jobs.md`. A concept that leaves a job unsupported goes
    back.
-7. **Critic.** The critic scores the remaining 9+ concepts.
-   The owner sees only concepts the critic scored 9+, each with its score
-   and the critic's reasoning. The owner approves one, or sends the team
-   back.
-8. **Handoff.** The two product designers write `handoff.md` (the spec) for
-   the approved concept: the systems designer the **How it works** part
+7. **Owner.** The owner sees the concepts that scored 9+ and cover every
+   job, each with its score and the design director's reasoning. The owner
+   approves one, or sends the team back.
+8. **Handoff.** The two product designers write `handoff.md` for the
+   approved concept: the systems designer the **How it works** part
    (structure, flows, interaction patterns, every state), the visual
    designer the **How it looks and feels** part (visual design, motion,
-   feedback). Both add their reasoning to `handoff-notes.md`. The systems
-   designer checks the whole handoff against `jobs.md`; gaps are fixed
-   before the build starts. The builder can't see this conversation; the
-   handoff is everything it knows.
+   feedback), and both a short **Why** part (the decisions that make it work,
+   and the director's and owner's notes). The systems designer checks the
+   whole handoff against `jobs.md`; gaps are fixed before the build starts.
+   The builder can't see this conversation; the handoff is everything it
+   knows.
 
 ## Execution phase — making the approved concept real
 
-1. A builder builds the approved concept from `handoff.md` and
-   `handoff-notes.md`.
+1. A builder builds the approved concept from `handoff.md`.
 2. Gaps or deviations the builder flags go to the designers who made the
    concept (or fresh designers of the same focus, starting from their notes
    and the handoff). If answering one would change the concept itself, it
@@ -134,47 +131,28 @@ alone.
 4. **The bar** is all three: a 9 or more, every job passing, a clean review.
    Short of it, the builder fixes everything found in one batch, then the
    checks run again. Repeat until the bar is met, or the team is stuck.
-5. **Critic.** The critic scores it. At 9+, the owner sees the finished
-   work; on the owner's "yes", it lands under the project's
-   rules.
+5. **Owner.** Once the bar is met, the owner sees the finished work; on the
+   owner's "yes", it lands under the project's rules.
 
 ## Quality bar
 
-Every concept and every build gets a score from 1 to 10, where 9 means "I
-would defend this to the owner as is". **The owner never sees anything that
-scored under 9.** Concept and build are scored separately: a polished build
-of a weak concept is still a weak concept. Two people score, on the same
-standard, for different reasons:
-
-- **Design director** (`roles/design-director.md`) — leads the team and
-  stays with the work. Its score drives the iteration: work goes round
-  until it gives a 9. It keeps its scoring history so scores are
-  consistent, and says each round whether the work really changed. Because
-  it helped shape the work, its 9 is necessary but not enough.
-- **Critic** (`roles/critic.md`) — fresh every time, never saw the work
-  develop, isn't told who proposed what. Its score decides whether the
-  owner sees the work. It gets the concepts or the build plus `handoff.md`,
-  the owner's words and direction, `owner.md`, and any earlier critic's
-  objections — never `handoff-notes.md`, the team's scores or anyone's
-  notes.
-  - If, and only if, it can't make a call without knowing why something was
-    done, it returns `NEED REASONING: <question>`. Get the answer from the
-    relevant teammate, then continue the **same** critic with only that
-    answer; if it can't be continued, start a fresh critic with the same
-    inputs plus the question and answer.
-  - If it scores under 9, the work goes back to the team: its objections go
-    to the design director and the designers, and to the next critic.
+Every concept and every build gets a score from 1 to 10 from the design
+director, where 9 means "I would defend this to the owner as is". **The
+owner never sees anything that scored under 9.** Concept and build are
+scored separately: a polished build of a weak concept is still a weak
+concept. The director keeps its scoring history so scores are consistent,
+and says each round whether the work really changed.
 
 You enforce this:
 
-- No work goes to the owner without a critic score of 9 or more. The only
-  other messages in the loop are the jobs check, foundation questions,
+- No work goes to the owner without a design director score of 9 or more. The
+  only other messages in the loop are the jobs check, foundation questions,
   decision questions and stuck notes described here.
 - Score again only after the work has really changed. Keep every score in
   `scores.md`; never discard one to get a better one.
 - When the owner turns down something that scored 9+, record why in
-  `owner.md` and give it to every design director after that — it's the
-  best signal of what a 9 means to the owner.
+  `owner.md` and give it to the design director — it's the best signal of
+  what a 9 means to the owner.
 
 ## When the team is stuck
 
@@ -186,10 +164,10 @@ happens:
 - **Execution phase:** four rounds without meeting the full bar, or a round
   short of the bar that made no progress — the score didn't go up and the
   number of open blockers (failed jobs plus review blockers) didn't fall.
-- **Either phase:** two critic rejections in a row.
+- **Either phase:** the owner turns down two 9s in a row — the director's
+  sense of a 9 has drifted from the owner's.
 
-A round is one scoring pass; a critic rejection sends the work back to the
-team and its next pass counts as a round. Counts start over at each
+A round is one scoring pass. Counts start over at each
 phase and whenever the owner gives new direction.
 
 There's usually a reason: the goal is unclear, two constraints conflict,
