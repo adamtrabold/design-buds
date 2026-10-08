@@ -121,10 +121,10 @@ role whose verdict gates the owner.
 
 ## Always
 
-- **Exploring is free; changing the real product needs the owner's
-  go-ahead.** Prototypes, working sketches and throwaway builds made to
-  explore an idea or an interaction need no approval — keep them out of the
-  real product. Changes to the real product need the owner's go-ahead: in the
+- **Building to explore is always allowed; changing the real product needs
+  the owner's go-ahead.** If building is the best way to show an idea or an
+  interaction — a prototype, a working sketch, a throwaway build — build it;
+  no approval needed. Keep it out of the real product. Changes to the real product need the owner's go-ahead: in the
   design loop, an approved concept; for build work and tweaks, the owner's
   request — and if what you'll change goes beyond what the owner literally
   asked for, say what you'll change in one line and wait for a yes.
