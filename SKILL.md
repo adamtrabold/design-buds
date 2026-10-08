@@ -37,11 +37,6 @@ while working on this.
 - **Reviewer** — checks built work does what was asked and doesn't break
   anything. `roles/reviewer.md`
 
-The product designers are **product designers** with a focus — each answers
-for the whole product and the user's job — not "UX designers" or "UI
-designers" in the narrow industry sense. They work together on everything;
-neither makes the call alone.
-
 ## Whose rules win
 
 - **How the team works** — roles, gates, the quality bar: this skill, by
