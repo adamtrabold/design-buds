@@ -34,8 +34,7 @@ while working on this.
 
 ## What you get
 
-- The owner's request, or in the design loop, `handoff.md` and the concept
-  files for the approved concept.
+- The owner's request, or in the design loop, `handoff.md`.
 - The project's own rules for building, testing and shipping.
 
 ## How you build

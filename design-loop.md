@@ -91,10 +91,12 @@ alone.
 3. **Concepts.** The two product designers build 2–4 distinct concepts
    together in `concepts/`, taking turns with the same `NEXT:` relay: the
    systems designer on how each one works, the visual designer on how it
-   looks and feels. Either can push, reshape or kill any concept, and says
-   why in the concept file. Each concept says which directions it draws on.
-   The design director steers between turns and decides which concepts go
-   forward to scoring.
+   looks and feels. Either can push or reshape any concept, or propose
+   killing one, and says why in the concept file. Each concept says which
+   directions it draws on. After every pair of designer turns, the design
+   director steers: it gives direction, decides on any proposed kills, and
+   either sends the designers round again or ends the building with
+   `READY: <concepts going forward>`.
 4. **Score.** The design director scores all of the round's concepts
    in one pass, 1–10.
 5. Concepts under 9 go back: improve them or replace them. Iterate until at
@@ -106,12 +108,17 @@ alone.
    job, each with its score and the design director's reasoning. The owner
    approves one, or sends the team back.
 8. **Handoff.** The two product designers write `handoff.md` for the
-   approved concept: the systems designer the **How it works** part
-   (structure, flows, interaction patterns, every state), the visual
-   designer the **How it looks and feels** part (visual design, motion,
-   feedback), and both a short **Why** part (the decisions that make it work,
-   and the director's and owner's notes). The systems designer checks the
-   whole handoff against `jobs.md`; gaps are fixed before the build starts.
+   approved concept, in this order: the systems designer the **How it
+   works** part (structure, flows, interaction patterns, every state); then
+   the visual designer the **How it looks and feels** part (visual design,
+   motion, feedback, for every state the first part names); both add to a
+   short **Why** part (the decisions that make it work, and the director's
+   and owner's notes). Then two checks, and gaps are fixed before the build
+   starts:
+   - the systems designer checks the whole handoff against `jobs.md`;
+   - the design director checks it matches the concept the owner approved
+     and the owner's notes in `owner.md`.
+
    The builder can't see this conversation; the handoff is everything it
    knows.
 
@@ -120,8 +127,9 @@ alone.
 1. A builder builds the approved concept from `handoff.md`.
 2. Gaps or deviations the builder flags go to the designers who made the
    concept (or fresh designers of the same focus, starting from their notes
-   and the handoff). If answering one would change the concept itself, it
-   goes to the owner as a decision question — what changed, the options,
+   and the handoff). The design director decides whether answering one
+   would change the concept itself; if it would, it goes to the owner as a
+   decision question — what changed, the options,
    the team's recommendation — not as work to approve. A builder that stops
    on a gap saves its partial work so the build continues from it.
 3. Three checks run on the build at the same time:
@@ -148,11 +156,15 @@ point, for a separate set of eyes. Give it only the work, the owner's words
 and direction, `handoff.md` if there is one, and `owner.md`. Its view goes
 straight to the owner and changes nothing on its own.
 
+Here the design director scores concepts it helped steer, and the systems
+designer checks coverage on concepts it helped build. That's by design: the
+owner is the independent check, and the critic is there when they want one.
+
 You enforce this:
 
 - No work goes to the owner without a design director score of 9 or more. The
   only other messages in the loop are the jobs check, foundation questions,
-  decision questions and stuck notes described here.
+  decision questions, stuck notes, and critic reports the owner asked for.
 - Score again only after the work has really changed. Keep every score in
   `scores.md`; never discard one to get a better one.
 - When the owner turns down something that scored 9+, record why in
@@ -170,10 +182,12 @@ happens:
   short of the bar that made no progress — the score didn't go up and the
   number of open blockers (failed jobs plus review blockers) didn't fall.
 - **Either phase:** the owner turns down two 9s in a row — the director's
-  sense of a 9 has drifted from the owner's.
+  sense of a 9 has drifted from the owner's. Turning down a set of concepts
+  counts as one rejection, and this count doesn't reset when the owner
+  gives new direction.
 
-A round is one scoring pass. Counts start over at each
-phase and whenever the owner gives new direction.
+A round is one scoring pass. Round counts start over at each phase and
+whenever the owner gives new direction.
 
 There's usually a reason: the goal is unclear, two constraints conflict,
 information is missing, or the idea can't work as framed. Ask the design
@@ -197,7 +211,7 @@ the notes files. Keep your context for running the loop.
 
 ## Why it's set up this way
 
-- The director and UX checks exist because checking work only against the
+- The director and jobs checks exist because checking work only against the
   spec let bad work reach the owner.
 - Concept and execution are separate so effort goes into the right idea
   before anything is built, and the owner judges ideas as ideas.

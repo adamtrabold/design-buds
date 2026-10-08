@@ -106,12 +106,15 @@ ask whether to start one — don't create the file unasked.
 Paste the role brief **verbatim** — never paraphrase it — then add the
 owner's words for the task, the owner's direction, and the exact **paths**
 to the files it needs. Teammates can't see this conversation or each other;
-everything they know comes from the brief and those files. The details
-(where files live, notes, keeping teammates going) are in `design-loop.md`
-and apply to any teammate.
+everything they know comes from the brief and those files. Roles whose value
+is fresh eyes — the reviewer, the critic, the jobs checker — start fresh
+each time, keep no notes, and read only the files they're given by path,
+never the whole work folder. Design-loop details (where files live, notes,
+keeping teammates going) are in `design-loop.md`.
 
 **Pick the best-fit model for each role.** Judgment and creative work —
-designers, the design director, the reviewer — get the most capable model.
+designers, the design director, the builder, the reviewer, the critic —
+get the most capable model.
 Purely mechanical steps (running a test suite, taking screenshots, sweeping
 files) can use a faster one. Never use a lighter model to save cost on a
 role whose verdict gates the owner.
@@ -166,4 +169,5 @@ role whose verdict gates the owner.
   open.
 - **Independence:** nobody reviews or scores their own work. Checking your
   own small change against the request and the tests is fine; that's not a
-  review.
+  review. In the design loop, the director scores concepts it steered by
+  design — the owner is the independent check there.
