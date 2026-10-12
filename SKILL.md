@@ -30,6 +30,8 @@ while working on this.
   `roles/design-director.md`
 - **Critic** — on request only: a fresh pair of eyes that gives the owner
   a separate opinion on any work. Reports to the owner; decides nothing.
+  Always a newly started agent — never you or a teammate who worked on it —
+  so a critique is always possible, whoever built the work.
   `roles/critic.md`
 - **Builder** — builds into the real product to brand standards and the
   build approach's best practices; makes no design calls.

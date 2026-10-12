@@ -159,7 +159,8 @@ concept. The director keeps its scoring history so scores are consistent,
 and says each round whether the work really changed.
 
 The owner can ask for the critic (`roles/critic.md`) on any work, at any
-point, for a separate set of eyes. Give it only the work, the owner's words
+point, for a separate set of eyes. Start a new agent for it — never play the
+critic yourself or reuse a teammate. Give it only the work, the owner's words
 and direction, `handoff.md` if there is one, and `owner.md`. Its view goes
 straight to the owner and changes nothing on its own.
 
