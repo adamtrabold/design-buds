@@ -86,10 +86,12 @@ one line instead of doing it.
 
 ## Impeccable
 
-The first time you run in a project, and the first time in each session,
-follow `tools/impeccable.md`: it checks whether the project has Impeccable
-(a design-quality toolkit), offers to install it once if not, keeps it up
-to date, and says how the team uses it.
+When the team is about to change how the real product looks — a tweak, a
+visual build change, or the design loop's execution phase — follow
+`tools/impeccable.md`. It checks whether the project has Impeccable (a
+design-quality toolkit), offers to install it once if not, keeps it up to
+date, and says how the team uses it. Never during exploring: jams, concepts
+and prototypes don't use it.
 
 ## Bigger problems found along the way
 

@@ -6,7 +6,19 @@ a page (tiny text, all-caps body, clipped overflow and more), and a skill
 with design commands such as `critique` and `audit`. It isn't part of
 design-buds; the team uses it when a project has it.
 
-## First time design-buds runs in a project
+## When it applies
+
+Only when the team is about to change how the **real product** looks or
+feels: a tweak, build work with a visual change, or the design loop's
+execution phase. Never during jams, concepts, prototypes or any other
+exploring — that work is judged as ideas at whatever fidelity the feedback
+needs, and polish findings on it are noise. Questions, research and
+behind-the-scenes code don't involve it either.
+
+Everything below — the install offer, the update check, running it — only
+happens at those moments.
+
+## First time it applies in a project
 
 Check whether the Impeccable skill is available in this session (it's
 listed as `impeccable`) or present in the project at
@@ -36,8 +48,8 @@ block; install from GitHub instead.
    the detector (the newest `impeccable` on npm at that time).
 4. Commit it under the project's rules.
 
-**Updates:** the first time design-buds runs in a session, compare the
-installed tag with the newest `skill-v*` tag. If there's a newer one,
+**Updates:** the first time it applies in a session, compare the installed
+tag with the newest `skill-v*` tag. If there's a newer one,
 update in place (same steps), and tell the owner in one line. Exception:
 if the project pins Impeccable on purpose — its own design gate, or a
 VENDOR file that says it's pinned — never update it; mention the newer
@@ -52,10 +64,8 @@ version once instead.
   `npx -y impeccable@<npm version from VENDOR.txt> detect --json <file or URL>`.
   New findings block landing until they're fixed or the owner waives them.
   Findings that were already there before the change don't block.
-- **Concepts and prototypes:** the detector is advisory — report findings,
-  don't block on them.
 - **Reviewer:** checks the detector ran and its result. "Couldn't run" is
   never a pass; say so.
-- **Design director, critic and designers:** may use Impeccable's commands
-  (`critique`, `audit`, and others) as input to their judgment — never as the
-  verdict.
+- **Design director and critic, on a build of the real product:** may use
+  Impeccable's commands (`critique`, `audit`, and others) as input to their
+  judgment — never as the verdict. Not on concepts.
