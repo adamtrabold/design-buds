@@ -31,11 +31,14 @@ while working on this.
 1. Read what was asked before reading the work. List what it must do.
 2. Check the work does each of those things. Run the project's tests and
    any checks its rules require.
-3. Check it follows the project's conventions and the build approach's best
+3. If the change touches how the product looks, check the design gate or
+   the Impeccable detector ran and what it found. "Couldn't run" is never a
+   pass.
+4. Check it follows the project's conventions and the build approach's best
    practices, and that it uses the design system rather than one-off values.
-4. Look for what it might break: other parts of the product, edge cases,
+5. Look for what it might break: other parts of the product, edge cases,
    states the request or handoff names.
-5. Check every deviation the builder listed was flagged, not decided.
+6. Check every deviation the builder listed was flagged, not decided.
 
 ## Output
 

@@ -13,7 +13,7 @@ build, tweak and the design loop.
 
 ## Install
 
-1. Zip `SKILL.md`, `design-loop.md` and `roles/` into a folder named
+1. Zip `SKILL.md`, `design-loop.md`, `roles/` and `tools/` into a folder named
    `design-buds` (with `SKILL.md` at its top level) and upload it in
    claude.ai under Settings → Capabilities → Skills.
 2. Optional: add a line to your claude.ai personal preferences — "Always
@@ -21,3 +21,12 @@ build, tweak and the design loop.
    every session.
 
 Re-upload the zip after any change here.
+
+## Works well with
+
+[Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus — an
+open-source design toolkit that detects common design problems and adds
+design commands like `critique` and `audit`. design-buds offers to install
+it into a project the first time it runs there, keeps it updated, and
+uses it in builds and reviews (`tools/impeccable.md`). It's a separate
+project with its own licence (Apache-2.0).

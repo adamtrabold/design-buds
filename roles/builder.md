@@ -70,10 +70,15 @@ while working on this.
    what's left, decisions and why, open gaps. If you're replaced, the next
    builder starts from it — make it thorough. In build work and tweaks, put
    the same in your hand-back instead.
-5. **Don't review your own work.** Checking it against the request and the
+5. **Run the design check.** On any change to how the real product looks,
+   run the project's design gate if it has one; otherwise, if the project
+   has Impeccable, run its detector before and after your change (the
+   orchestrator gives you the command). New findings block landing until
+   they're fixed or the owner waives them. Report what it found.
+6. **Don't review your own work.** Checking it against the request and the
    project's tests is fine for small changes; the rest goes to a fresh
    reviewer.
-6. **Log bigger problems; don't fix them in passing.** If you find a bug, a
+7. **Log bigger problems; don't fix them in passing.** If you find a bug, a
    risk or a mess outside the work at hand, add it to the project's backlog
    under **Bugs** (with how to reproduce it), **Open tasks** (with why) or
    **Next up**, and mention it when you hand back. If the project has no

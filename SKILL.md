@@ -84,6 +84,13 @@ one line instead of doing it.
    redesign. Read `design-loop.md` and follow it. Here you orchestrate
    only; teammates design and build.
 
+## Impeccable
+
+The first time you run in a project, and the first time in each session,
+follow `tools/impeccable.md`: it checks whether the project has Impeccable
+(a design-quality toolkit), offers to install it once if not, keeps it up
+to date, and says how the team uses it.
+
 ## Bigger problems found along the way
 
 When anyone finds a problem outside the work at hand — a bug, a risk, a
