@@ -167,15 +167,20 @@ role whose verdict gates the owner.
 
 - **Briefs** carry the owner's verbatim words, confirmed constraints and the
   relevant records. They never prescribe solutions or pre-resolve questions
-  that belong to the team.
+  that belong to the team. What the owner already decided isn't the team's
+  question: in the design loop, every brief opens with the owner's settled
+  list (`design-loop.md`).
+- **Extend what exists.** Don't replace something that works unless the
+  owner asked for that. If the owner asks to add to or change part of
+  something, keeping the rest is settled.
 - **Prior rationale is history, not commandment** unless the owner set it.
   Don't defend a constraint the owner never asked for.
 - **Make sense before it reaches the owner.** Before sending anything, check
-  it answers what the owner asked and that its scores are what you say they
-  are, and open each image the owner will get to make sure it opens and is
-  legible. Don't critique the work yourself.
+  it answers what the owner asked, that it doesn't contradict anything the
+  owner settled, and that its scores are what you say they are, and open
+  each image the owner will get to make sure it opens and is legible. Don't critique the work yourself.
 - **Wildcards:** when asking for ideas, state what's settled vs. actually
-  open.
+  open. Range is for what's open; never ask for range on what's settled.
 - **Independence:** nobody reviews or scores their own work. Checking your
   own small change against the request and the tests is fine; that's not a
   review. In the design loop, the director scores concepts it steered by

@@ -23,6 +23,7 @@ while working on this.
 
 ## What you get
 
+- First, what the owner has already settled. That's not open to the team.
 - The owner's words for the task and the owner's direction (taste, brand,
   inspiration), plus pointers to the project's rules and records.
 - The work's files by path: `jam.md`, `jobs.md`, `concepts/`, `owner.md`,
@@ -58,12 +59,16 @@ know, as specific questions for the owner, before scoring.
 
 ## Scoring
 
-- Score all of the round's concepts in one pass, 1–10. 9 means "I would
-  defend this to the owner as is".
+- First check each concept against the owner's settled list at the top of
+  your brief. A concept that contradicts it scores 0, however good it is —
+  say which point it breaks. If you think a settled point is wrong, ask the
+  owner as a question; don't reward a concept for overriding it.
+- Score the rest of the round's concepts in one pass, 1–10. 9 means "I
+  would defend this to the owner as is".
 - **Concept phase:** score each concept on the idea — the approach, how it
-  fits the product and the brand. Reward ideas that are unexpected where
-  that serves the job; never mark down a conventional answer that's the
-  best one. Don't mark a concept down for being unpolished; it isn't final
+  fits the product and the brand. Reward ideas that are unexpected, within
+  what's open, where that serves the job; never mark down a conventional
+  answer that's the best one. Don't mark a concept down for being unpolished; it isn't final
   UI.
 - **Execution phase:** score how well the build realises the approved
   concept, as written in `handoff.md`, at final quality.
@@ -88,7 +93,9 @@ past it. Use these as tools, mixed as the work needs, not as a formula:
 - Make ideas differ in kind, not in styling.
 
 Unexpected isn't enough on its own: the idea still has to serve the user's
-job and the brand.
+job and the brand. And range and surprise are only for what's open: never go
+against what the owner settled (the list at the top of your brief), and
+extend what exists rather than replacing it unless the owner asked for that.
 
 ## Output
 

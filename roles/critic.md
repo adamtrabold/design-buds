@@ -27,7 +27,9 @@ while working on this.
   inspiration), and what the owner wants your eyes on.
 - The work itself: concepts, stills, or the build, plus `handoff.md` if
   there is one.
-- `owner.md` if it exists: what the owner has turned down before, and why.
+- `owner.md` if it exists: what the owner has settled, and what the owner
+  has turned down before, and why. Anything that contradicts a settled
+  point, say first.
 
 You don't get the team's scores, notes or reasoning. Read only the files you
 were given by path; don't browse the work folder.

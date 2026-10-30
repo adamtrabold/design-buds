@@ -21,7 +21,8 @@ design/<work>/
   concepts/          one file or folder per concept
   scores.md          every score and objection, in order;
                      you write it
-  owner.md           the owner's answers, rejections and reasons
+  owner.md           what the owner settled, and the owner's answers,
+                     rejections and reasons
   handoff.md         the approved concept, for the builder: how it works,
                      how it looks and feels, and why
   notes/<role>.md    notes for teammates that persist: notes/systems.md,
@@ -45,6 +46,28 @@ design/<work>/
   context gets heavy, a fresh one starts from that note — so the note is
   never more than a round old. Make it thorough. The same goes for you, in
   `notes/orchestrator.md`.
+
+## Settled by the owner
+
+Before anything else, write what the owner has already decided at the top
+of `owner.md`, under `## Settled`:
+
+- Each point quotes the owner's words (from this task or earlier answers in
+  `owner.md`) and says what it rules out — for example, "add abilities to
+  the existing chat" settles that the chat stays; the concepts extend it.
+- Only what the owner said or plainly picked. If you're inferring it, it's
+  open. Your own preferences and earlier rationale never go on the list.
+- Extending what exists is the default: if the owner asked to add to or
+  change part of something, keeping the rest is settled.
+
+Show the owner the list in one line, in the same message that names the way
+of working: "Settled: …". Don't wait for an answer: carry on, and fold in a
+correction when it arrives (a correction counts as new direction).
+
+**Every brief in the loop opens with the settled list,** before the role
+brief. Concepts may not contradict it. A teammate who thinks a settled
+point is wrong says so as a question for the owner in its reply; you send
+it as a decision question. It never becomes a concept.
 
 ## Before the first round
 
@@ -82,6 +105,7 @@ alone.
      **creative directions** — the big idea behind a concept: a metaphor, a
      philosophy, a reference point (for example, a settings screen treated
      like a well-organised toolbox), drawing on the owner's inspiration.
+     Directions explore what's open; none of them reopens what's settled.
    - Keep it moving: every addition must add something new or make an idea
      sharper; drop weak ideas fast rather than polishing them; never settle
      on the idea everyone can live with. The jam ends after its passes even
@@ -91,17 +115,19 @@ alone.
    jobs — anything wrong or missing?" Don't wait for the answer: carry on,
    and fold it in when it arrives.
 3. **Concepts.** The two product designers build 2–4 distinct concepts
-   together in `concepts/`, taking turns with the same `NEXT:` relay (the
-   systems designer starts): the
-   systems designer on how each one works, the visual designer on how it
+   together in `concepts/` — or one, when the owner's words already pick
+   the approach. Range applies only to what's open. They take turns with
+   the same `NEXT:` relay (the systems designer starts): the systems
+   designer on how each one works, the visual designer on how it
    looks and feels. Either can push or reshape any concept, or propose
    killing one, and says why in the concept file. Each concept says which
    directions it draws on. After every pair of designer turns, the design
    director steers: it gives direction, decides on any proposed kills, and
    either sends the designers round again or ends the building with
    `READY: <concepts going forward>`.
-4. **Score.** The design director scores all of the round's concepts
-   in one pass, 1–10.
+4. **Score.** The design director first checks each concept against the
+   settled list. A concept that contradicts it scores 0, however good it
+   is. Then it scores the rest of the round's concepts in one pass, 1–10.
 5. Concepts under 9 go back: improve them or replace them. Iterate until at
    least one scores 9 or more, or the team is stuck (below).
 6. **Jobs coverage.** The product designer (systems focus) checks each 9+
@@ -152,7 +178,8 @@ alone.
 ## Quality bar
 
 Every concept and every build gets a score from 1 to 10 from the design
-director, where 9 means "I would defend this to the owner as is". **The
+director, where 9 means "I would defend this to the owner as is" — or 0
+when a concept contradicts what the owner settled. **The
 owner never sees anything that scored under 9.** Concept and build are
 scored separately: a polished build of a weak concept is still a weak
 concept. The director keeps its scoring history so scores are consistent,
@@ -222,6 +249,9 @@ the notes files. Keep your context for running the loop.
 
 - The director and jobs checks exist because checking work only against the
   spec let bad work reach the owner.
+- The settled list exists because the push for range once produced a
+  concept that replaced a chat the owner had asked only to extend; it
+  scored 9, reached the owner, and wasted a round.
 - Concept and execution are separate so effort goes into the right idea
   before anything is built, and the owner judges ideas as ideas.
 - The builder works from a written handoff because long, cluttered contexts
