@@ -1,0 +1,16 @@
+{
+  "name": "design-buds",
+  "owner": { "name": "Adam Trabold" },
+  "plugins": [
+    {
+      "name": "design-buds",
+      "source": "./plugins/design-buds",
+      "description": "A design team (designers, design director, builder, reviewer) that scales from a quick build to a full design loop."
+    },
+    {
+      "name": "adam-taste",
+      "source": "./plugins/taste",
+      "description": "Adam's design taste as a log of his own words. Install only if you're Adam, or use it as a template for your own."
+    }
+  ]
+}

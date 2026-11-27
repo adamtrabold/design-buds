@@ -9,7 +9,7 @@ design-buds; the team uses it when a project has it.
 ## When it applies
 
 Only when the team is about to change how the **real product** looks or
-feels: a tweak, build work with a visual change, or the design loop's
+feels: a small change, a build with a visual change, or the design loop's
 execution phase. Never during jams, concepts, prototypes or any other
 exploring — that work is judged as ideas at whatever fidelity the feedback
 needs, and polish findings on it are noise. Questions, research and
