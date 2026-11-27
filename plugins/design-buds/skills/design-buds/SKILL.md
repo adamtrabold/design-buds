@@ -120,16 +120,16 @@ before form.
 
 ## Taste
 
-The owner's taste lives in a separate skill whose name ends in `-taste`
-(for this owner, `adam-taste`). It's a log of the owner's own words about design, one
-line each, with the date and what it was about.
+The owner's design principles live in a separate skill whose name ends in
+`-taste` (for this owner, `adam-taste`): a short list that holds across
+every project.
 
-- **Reading:** at the start of a job, pick the lines that apply and paste
-  them into briefs as quotes. Don't summarise them into rules.
-- **Writing:** when the owner corrects something or says why they like
-  something, add one line in their exact words, following the taste
-  skill's instructions. Never turn one remark into a rule. Only the owner
-  removes or merges lines.
+- Paste them in full into every design brief. The director and critic
+  judge against them.
+- When a correction from the owner looks like it would hold for every
+  project, suggest a principle in one line at hand-back; it's added only on
+  the owner's yes. Project-specific feedback stays in the project's
+  records (`owner.md`).
 - If there's no taste skill, offer once to start one.
 
 ## Whose rules win
@@ -150,8 +150,7 @@ Each brief is, in order:
 1. `shared.md`, verbatim;
 2. the role brief, verbatim;
 3. the intent line;
-4. the owner's words for this task, verbatim, and the taste lines that
-   apply;
+4. the owner's words for this task, verbatim, and the taste principles;
 5. exact paths to the files it needs.
 
 Teammates can't see this conversation or each other. Never paraphrase the

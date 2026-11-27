@@ -16,7 +16,7 @@ team can no longer see.
 
 ## What you get
 
-- The intent line, the owner's words, and the taste lines that apply.
+- The intent line, the owner's words, and the taste principles.
 - The work: concepts, stills or the build, plus `handoff.md` if there is
   one.
 - `owner.md` if it exists: what the owner has picked and turned down, and
@@ -34,7 +34,7 @@ you were given by path.
 4. Run the generic test: name the obvious version any AI would make. Is
    this more than that?
 5. Name what works and what doesn't, with the source of each point (the
-   owner's words, a taste line, a principle, a usability fact) or labelled
+   owner's words, a taste principle, a principle, a usability fact) or labelled
    as your opinion.
 
 ## Output

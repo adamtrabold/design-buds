@@ -31,7 +31,7 @@ so.
 
 ## What you get
 
-The intent line, the owner's words and taste lines, paths to the work's
+The intent line, the owner's words, the taste principles, paths to the work's
 files, and the director's review after each round.
 
 ## Rules

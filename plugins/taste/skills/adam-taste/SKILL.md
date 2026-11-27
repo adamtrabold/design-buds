@@ -1,48 +1,48 @@
 ---
 name: adam-taste
-description: Adam's design taste, as a log of Adam's own words about design. Read with design-buds before briefing design or visual work; add to it when Adam corrects or praises work.
+description: Adam's design principles, true across every project. Read with design-buds before briefing or judging design or visual work.
 ---
 
-# Adam's taste
+# Adam's design principles
 
-`taste.md`, next to this file, is a log of the owner's own words about
-design: one line each, oldest first.
+These hold for every project. Project-specific direction lives in that
+project's records, not here.
 
-```
-2026-10-21 · icons · "too clever… its a tag so why would it have a dogear"
-```
+1. **Have a point of view.** Each concept is one clear idea with its own
+   logic, rooted in what the thing is.
+2. **Distinctive over safe.** Average fails. A bit of whimsy is welcome.
+3. **Real breadth.** Directions differ in idea, not in styling.
+4. **References are for feel.** Borrow the feeling; never copy the source.
+5. **Physical truth.** Anything borrowed from the real world behaves like
+   the real thing. Cleverness never overrides what the object is.
+6. **Follow what exists.** Existing sizes, patterns and styles before new
+   ones.
+7. **Restraint.** Few colours, no detail without a job, nothing out of
+   place.
+8. **Proportion.** Spacing comes from the system or the object's own
+   dimensions; balance holds where symmetry is implied.
+9. **Plain labels.** One word where possible; everyday words over jargon.
+10. **Everything has a point.** Every screen or page makes clear what it's
+    for.
+11. **Feel beats spec.** It has to feel good to use.
 
-## Reading it
+## Using them
 
-At the start of a job, pick the lines that apply to the work and paste them
-into briefs as quotes. Don't summarise them, merge them, or turn them into
-rules. One line is one remark, not a principle.
+- Every brief includes these principles in full.
+- They're the bar the design director and critic judge against, and a
+  source an objection can cite ("principle 7, restraint").
+- They guide; they don't replace the owner's direction on a specific piece
+  of work. Where the owner's words for the task differ, the owner's words
+  win.
 
-## Adding to it
+## Changing them
 
-When the owner corrects work, or says why they like something, add one
-line:
-
-- the date, a word or two for what it was about, and the owner's exact
-  words in quotes;
-- nothing else: no interpretation, no "so the rule is…";
-- only lines are added; existing lines are never edited or removed except
-  by the owner.
-
-It lives in the public repo `github.com/adamtrabold/design-buds` at
-`plugins/taste/skills/adam-taste/taste.md`, so:
-
-- **Never** add names of other people, clients, employers, or anything
-  private or unreleased. Keep the words about design only; if a remark
-  can't be separated from private detail, leave it out.
-- If the session can commit to that repo, append the lines to the end of
-  the file and push to `main` (the owner has asked for that), one commit
-  per batch, message `taste: <what it was about>`.
-- If it can't, list the new lines at hand-back under "Taste to add", ready
-  to paste, so a later session can add them.
-
-## Tidying
-
-If the log gets long enough that picking lines is slow, suggest grouping
-lines under topic headings, with every line's words unchanged. Only the
-owner merges or retires a line. Change nothing until they say yes.
+- Only the owner adds, edits or removes a principle.
+- When a correction from the owner looks like it would hold for every
+  project, suggest a principle in one line at hand-back. Add it only on the
+  owner's yes. One remark is not a principle until the owner says so.
+- This file is in the public repo `github.com/adamtrabold/design-buds`:
+  nothing private, no names, nothing tied to one project.
+- To change it: edit this file and push to `main` if the session can (the
+  owner has asked for that); otherwise give the owner the new line, ready
+  to paste.

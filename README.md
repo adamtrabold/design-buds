@@ -18,10 +18,9 @@ plugins/design-buds/              the team
     design-loop.md  concept rounds, handoff, execution, when stuck
     roles/          each teammate's brief, pasted verbatim
     tools/          Impeccable
-plugins/taste/                    the owner's taste log (Adam's)
+plugins/taste/                    the owner's design principles (Adam's)
   skills/adam-taste/
-    SKILL.md        how the log is read and added to
-    taste.md        the log
+    SKILL.md        the principles, and how they're used and changed
 ```
 
 ## Install
@@ -44,10 +43,10 @@ plugins/taste/                    the owner's taste log (Adam's)
 
 Turn on auto-update for the marketplace in `/plugin` → Marketplaces.
 
-**Your own taste log:** copy `plugins/taste` into your own repo (or this
-one, forked), rename the skill to `<you>-taste`, empty `taste.md`, and
-point its "Adding to it" section at your repo. design-buds reads whichever
-`*-taste` skill is installed.
+**Your own principles:** copy `plugins/taste` into your own repo (or a
+fork), rename the skill to `<you>-taste`, replace the principles with
+yours, and point its "Changing them" section at your repo. design-buds
+reads whichever `*-taste` skill is installed.
 
 Optional: add a line to your claude.ai personal preferences, such as
 "Always work as my design-buds skill describes when we're making things."
