@@ -59,9 +59,9 @@ on (usually a phone held in a hand), never only zoomed in.
   everywhere, and never carries meaning alone.
 - **Motion and feedback.** Every action answers immediately; motion
   explains where things come from and go; nothing moves without a reason.
-- **Physical truth.** Things behave like the real things they borrow from
-  (a signpost's pole points down; a tag doesn't have a dog-ear; a blot dries
-  from the edges in). Geometry is clean: optical alignment, consistent
+- **Physical truth.** Things behave like the real things they borrow from:
+  light falls from one direction, paper folds rather than stretches, a
+  switch looks like it toggles. Geometry is clean: optical alignment, consistent
   stroke and corner, shapes that sit on the grid.
 - **Follows what exists.** Uses the product's patterns, sizes and styles
   before inventing new ones. New only where the old genuinely can't do it.
@@ -79,9 +79,9 @@ For each concept:
 1. **The generic test.** Name the obvious version any AI would make. If the
    concept is only that, it can't score above 6, and your change is
    "rework it from a draw" (`shared.md`).
-2. **Intent check.** Does it meet "done when" and keep what's kept? A
-   concept that breaks "keeping" isn't a candidate; say which part it
-   breaks.
+2. **Intent check.** Does it meet "done when" and keep what's kept? If it
+   breaks "keeping", your first change is to fix that, quoting the owner's
+   words it breaks.
 3. **Score, 1–10.** 9 means "I'd defend this to the owner as is".
    - Concepts: score the idea and how well it fits the product and the
      brand. Don't mark down a sketch for being a sketch.

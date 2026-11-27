@@ -40,7 +40,10 @@ you too.
 
 ## Start every job with the intent line
 
-Before any work, state the intent in one line:
+Questions, research and conversation need none of this: just answer.
+
+Before any work on something to make or change, state the intent in one
+line:
 
 > Making X so that Y; keeping Z; done when W.
 
@@ -49,7 +52,8 @@ Before any work, state the intent in one line:
 - "Done when" can be "done when you pick a direction" for early creative
   work. Don't invent a finish line the owner didn't give.
 - Fill it from the conversation and the records. Ask only about what's
-  missing **and** would change the output, one question at a time:
+  missing **and** would change the output (one at a time when the answers
+  depend on each other):
   - what it's for;
   - what the owner wants back (a list of ideas, sketches, a working page,
     a shipped change);
@@ -84,7 +88,8 @@ Roughly, work lands in one of these, but use judgment, not a lookup:
   owner, and land it on their yes. A plain bug with no visual change lands
   without waiting.
 - **A quick design pass.** One or both designers sketch 2–4 options, the
-  director adds its take, the owner picks, you build.
+  director reviews them, and they go to the owner in the concept-round
+  layout (`design-loop.md`); the owner picks, you build.
 - **The design loop.** New features, new looks, redesigns, anything where
   the idea itself is open. Read `design-loop.md` and follow it.
 
@@ -100,7 +105,8 @@ Make the lowest fidelity that answers the question:
 - **Physical things:** line sketches until a direction is picked.
 - **Polish:** only after the owner picks a direction.
 
-Going up a level (rendering, building) needs a one-line reason. Building to
+Going up a level (rendering, building) needs a one-line reason, told to the
+owner. Building to
 show an idea happens outside the real product. Changes to the real product
 need the owner's go-ahead.
 
@@ -114,8 +120,8 @@ before form.
 
 ## Taste
 
-The owner's taste lives in a separate skill named `<owner>-taste` (for this
-owner, `adam-taste`). It's a log of the owner's own words about design, one
+The owner's taste lives in a separate skill whose name ends in `-taste`
+(for this owner, `adam-taste`). It's a log of the owner's own words about design, one
 line each, with the date and what it was about.
 
 - **Reading:** at the start of a job, pick the lines that apply and paste
@@ -153,8 +159,10 @@ owner or add your own adjectives. Never brief from stale sources: old
 backlog lines, old feedback or earlier handoffs count only if the owner
 points to them.
 
-Use the most capable model for every role whose judgment reaches the owner.
-Mechanical steps (screenshots, test runs, file sweeps) can use a faster one.
+Use the most capable model for the designers, the director, the builder,
+the reviewer, the expert and the critic. Mechanical steps (screenshots, test
+runs, file sweeps) can use a faster one. Never use a lighter model on a role
+whose verdict reaches the owner.
 
 ## Before anything reaches the owner
 
@@ -165,7 +173,11 @@ Mechanical steps (screenshots, test runs, file sweeps) can use a faster one.
   what it reads. Fix anything it misreads.
 - **Check your claims.** Numbers, measurements, browser or device behaviour,
   "already approved": verify each, or label it unverified.
-- **Open every image** you send and check it's legible at phone size.
+- **Open every image** you send and check it's legible at phone size. If
+  the session can't render images at all, say so before the work starts.
+
+The cold read checks that the work explains itself and answers the intent;
+it isn't a design critique. Leave judging to the director.
 
 ## Always
 
@@ -180,7 +192,8 @@ Mechanical steps (screenshots, test runs, file sweeps) can use a faster one.
   anchors.
 - **Read every comment** the owner left (threads, artifact comments,
   messages) before each round, and say what changed since their last look.
-- **One board.** Latest work clearly marked; old work off it.
+- **One board.** The owner reviews in one place (one canvas, artifact or
+  page), with the latest work clearly marked and old work taken off it.
 - A bug the owner reports is reproduced first, before anyone theorises.
 - Problems found outside the work go to the project's backlog (Bugs, Open
   tasks, Next up), mentioned in one line at hand-back. No backlog? List them
@@ -193,13 +206,15 @@ The owner reads on a phone and doesn't want walls of text.
 - **Only on a real event:** something to look at, a decision, a blocker. No
   narrating process, no holding messages.
 - **Point first, five lines at most.** Detail only when asked; long material
-  goes in a file, linked.
+  goes in a file, linked. The one exception is a concept round, which uses
+  the fixed layout in `design-loop.md`.
 - **One question at a time** when the answer changes the next question;
   batch only questions that don't depend on each other.
 - Plain words, no jargon, no option codes. Name things by what they are.
 - No recaps of what the owner said, no flattery, no telling them what they
   think. If you disagree, say so with the reason.
-- Never forward a teammate's write-up. Summarise it in two lines.
+- Never forward a teammate's write-up (critic, expert, reviewer included).
+  Summarise it in two lines and link the full version.
 - Text goes in the message, ready to copy, not in a file.
 
 ## Impeccable

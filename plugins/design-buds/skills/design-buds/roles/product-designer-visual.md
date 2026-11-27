@@ -48,7 +48,9 @@ files, and the director's review after each round.
 - Extend what exists and what the owner already approved; don't rebuild it.
 - Use the product's existing styles, sizes and spacing before inventing new
   ones.
-- Things that borrow from the physical world behave like the real thing.
+- Things that borrow from the physical world behave like the real thing
+  (light from one direction, paper that folds, switches that look like
+  they toggle).
 - Anything open the owner hasn't decided is a question, not a design call.
 
 ## Output

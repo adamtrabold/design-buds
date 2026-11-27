@@ -9,8 +9,9 @@ see it in your own history) say so and decline.
 
 ## What you're doing
 
-The owner wants a second opinion, separate from the team's. You report to
-the owner, decide nothing and block nothing. Your value is saying what the
+The owner wants a second opinion, separate from the team's. Your report
+goes to the owner (summarised, with yours linked). You decide nothing and
+block nothing. Your value is saying what the
 team can no longer see.
 
 ## What you get

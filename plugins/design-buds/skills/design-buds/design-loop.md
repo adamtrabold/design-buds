@@ -21,7 +21,8 @@ design/<work>/
   owner.md           the owner's words, verbatim and dated, and what they
                      picked, rejected and why; ends with the tally
   handoff.md         the picked concept, for the builder
-  notes/<role>.md    each persisting teammate's notes, and yours
+  notes/<role>.md    each persisting teammate's notes, and yours in
+                     notes/orchestrator.md
 ```
 
 Older work folders use the same names; carry on in them.
@@ -60,20 +61,32 @@ point, messages sent to the owner.
    defend this to the owner as is"), a one-line take, and what it would
    change. It checks each against the intent line's "done when" and
    "keeping", runs the generic test, and names the source of every
-   objection.
+   objection. A concept that still breaks "keeping" after the revision
+   doesn't go to the owner as a candidate; it's listed as killed, with the
+   owner's words it breaks.
 4. **One revision.** The designers act on the director's changes once.
    Changes it labels "director's opinion" are optional. The director
    re-scores. No further loops: whatever the scores, the round goes to the
    owner.
 5. **Expert**, if one is on the work: reviews the revised concepts
    alongside the director, separately.
-6. **To the owner, one message.** Each concept side by side:
-   - its four lines;
-   - the director's score, take and what it would still change;
-   - the expert's view, if any. If the expert and director disagree, show
-     both. Nobody loops to settle it.
-   Then one line listing killed ideas ("Killed: X, Y"). Sketches of killed
-   ideas only if the owner asks.
+6. **To the owner, one message,** with the concepts side by side on the
+   board. Point first (one line: what this round is), then a fixed block
+   per concept:
+
+   ```
+   Title
+   Idea: one line
+   Fits because: one line
+   Gives up: one line
+   Director: 8 · one-line take · would change: its top change
+   Expert: one line (only if there's an expert; shown even when it
+   disagrees with the director, and nobody loops to settle it)
+   ```
+
+   Then one line listing killed ideas and why ("Killed: X, too close to
+   Y"). Full reviews stay in `scores.md`, linked. Sketches of killed ideas
+   only if the owner asks.
 7. **The owner picks, combines, or sends notes.** Record their words in
    `owner.md`. Notes start the next round. Approved parts are kept from
    then on.
@@ -107,19 +120,22 @@ knows.
 ## Execution
 
 1. **Build** from `handoff.md` (`roles/builder.md`). Gaps go back to the
-   designers; anything that would change the picked concept goes to the
-   owner as a question, never decided by the team.
+   designers, and their answers are added to `handoff.md` so it stays the
+   builder's single source. Anything that would change the picked concept
+   goes to the owner as a question, never decided by the team.
 2. **Checks, at the same time:**
    - the director scores the build against `handoff.md`;
    - a fresh reviewer checks it works, meets the project's standards and
      lets the user do every job in `jobs.md` (`roles/reviewer.md`);
    - a blind read, if it encodes meaning (`SKILL.md`);
-   - Impeccable, per `tools/impeccable.md`.
+   - Impeccable, per `tools/impeccable.md`;
+   - the expert, if one is on the work, uses it as they would.
 3. **Fix rounds: two at most.** The builder fixes everything found in one
    batch, the checks run again.
-4. **To the owner:** stills or a live link, with the director's score and
-   the review result. A clean review is required unless the owner says
-   otherwise; anything still open after two fix rounds is listed plainly.
+4. **To the owner:** once the review is clean, or after two fix rounds,
+   whichever comes first. Stills or a live link, the director's score and
+   take, and the review as "clean" or one line per open blocker. Open
+   blockers are the owner's call: fix, accept, or rethink.
 5. **Lands on the owner's yes** under the project's rules. A no: record
    why in `owner.md`; the director says whether it's a build fix or a
    concept change.
@@ -128,9 +144,8 @@ knows.
 
 Bring the owner in when:
 
-- two concept rounds in a row end without a pick and the owner's notes
-  keep hitting the same point (that's two pushes: re-state the intent line
-  and check it);
+- the owner corrects the same point in two separate rounds (two pushes:
+  re-state the intent line and check it before going on);
 - execution still has open problems after two fix rounds;
 - the director, the expert or the designers keep raising the same blocker.
 
@@ -143,13 +158,14 @@ labelled as not ready.
 - **Keep the same agent** while it's on the same work, until its context
   gets heavy. Continue it by id or name if the session supports that;
   otherwise start a fresh one from its notes.
-- **Fresh every time, no notes:** the reviewer, blind readers and the
-  critic. They read only the files they're given by path.
+- **Fresh every time, no notes:** the reviewer, blind readers, the expert
+  and the critic. They read only the files they're given by path.
 - **Notes:** each persisting teammate updates `notes/<role>.md` briefly at
   the end of each round (where things stand, what's open, what's next),
   and fully before a handoff or when its context is heavy.
 - **Your context:** pass paths, not contents. Don't read work in depth;
-  skim the scores and notes. When your own context gets heavy, write a
+  skim the scores and notes. Your cold read of what goes to the owner is a
+  look, not a critique. When your own context gets heavy, write a
   handoff with a ready-to-paste prompt and tell the owner.
 
 ## Why it's set up this way

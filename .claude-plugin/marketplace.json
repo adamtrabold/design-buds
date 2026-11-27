@@ -10,7 +10,7 @@
     {
       "name": "adam-taste",
       "source": "./plugins/taste",
-      "description": "Adam's design taste as a log of his own words. Install only if you're Adam, or use it as a template for your own."
+      "description": "Adam's design taste as a log of Adam's own words. Install only if you're Adam, or use it as a template for your own."
     }
   ]
 }

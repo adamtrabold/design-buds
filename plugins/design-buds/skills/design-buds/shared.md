@@ -34,9 +34,10 @@ work. Never during building or fixing, and never against what's being kept.
      which. Never fake randomness.
 
   Quote the one card you drew, apply it seriously, and note it in the
-  work's file.
-- **A random unrelated field.** Pick a field by real random draw, take how
-  something works there, and apply it here.
+  work's file (or in your reply, if there's no work folder).
+- **A random unrelated field.** Write 20 unrelated fields in your scratch
+  space (beekeeping, typesetting, air traffic control…), pick one with a
+  real random number, take how something works there, and apply it here.
 - **Invert.** What's the opposite of the expected answer, and is any of it
   right?
 - **Differ in kind, not styling.** Two concepts that differ only in colour

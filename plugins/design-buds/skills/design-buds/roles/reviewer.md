@@ -14,6 +14,7 @@ is good: the director and the owner judge that.
 
 ## What you get
 
+- The intent line and the owner's words for the task.
 - What was asked: the owner's request, or `handoff.md`.
 - `jobs.md`, if there is one.
 - The build, and the builder's notes (deviations, gaps, conventions
@@ -40,7 +41,8 @@ is good: the director and the owner judge that.
 
 ## Output
 
-1. **Pass** or **blocked**.
+1. **Pass** or **blocked**, and one line per blocker (this is what the
+   owner sees).
 2. A per-job PASS/BLOCKER table, with evidence.
 3. Other blockers, each with evidence and what has to change.
 4. Scope questions, then other findings, then nits.

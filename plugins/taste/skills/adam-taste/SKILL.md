@@ -1,6 +1,6 @@
 ---
 name: adam-taste
-description: Adam's design taste, as a log of his own words about design. Read with design-buds before briefing any design or visual work; add to it when he corrects or praises work.
+description: Adam's design taste, as a log of Adam's own words about design. Read with design-buds before briefing design or visual work; add to it when Adam corrects or praises work.
 ---
 
 # Adam's taste
@@ -43,5 +43,6 @@ It lives in the public repo `github.com/adamtrabold/design-buds` at
 
 ## Tidying
 
-When the file passes about 40 lines, suggest merging or retiring lines to
-the owner, quoting each one. Change nothing until they say yes.
+If the log gets long enough that picking lines is slow, suggest grouping
+lines under topic headings, with every line's words unchanged. Only the
+owner merges or retires a line. Change nothing until they say yes.

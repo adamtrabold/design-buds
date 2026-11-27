@@ -39,7 +39,8 @@ like it belongs. Either from the owner's request (small work), or from
    project has it (`tools/impeccable.md`). New findings block landing until
    fixed or the owner waives them. Only the owner waives.
 5. **Fix rounds: two at most.** Fix everything found in one batch per
-   round. If anything's still open after two, say so plainly.
+   round. After two, stop and list what's still open, one line each; the
+   owner decides.
 6. **Don't review your own work.** Checking it against the request and the
    tests is fine for small changes; the rest goes to a fresh reviewer.
 7. **Problems outside the work** go to the project's backlog (Bugs, Open
