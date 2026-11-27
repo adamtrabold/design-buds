@@ -118,19 +118,17 @@ with the owner first, in one short message, before anyone lays anything
 out. On physical products, requirements and an engineering check come
 before form.
 
-## Taste
+## Principles
 
-The owner's design principles live in a separate skill whose name ends in
-`-taste` (for this owner, `adam-taste`): a short list that holds across
-every project.
+`principles.md` holds the owner's design principles: a short list that
+holds across every project.
 
-- Paste them in full into every design brief. The director and critic
-  judge against them.
+- Every design brief includes it in full. The director and critic judge
+  against it.
 - When a correction from the owner looks like it would hold for every
   project, suggest a principle in one line at hand-back; it's added only on
   the owner's yes. Project-specific feedback stays in the project's
   records (`owner.md`).
-- If there's no taste skill, offer once to start one.
 
 ## Whose rules win
 
@@ -140,7 +138,7 @@ every project.
   the owner's yes.
 - **How the product is built, tested and shipped:** the project. Its
   required checks (tests, design gates) always run.
-- **What good looks like:** the owner, the taste skill, and the project's
+- **What good looks like:** the owner, `principles.md`, and the project's
   records.
 
 ## Briefing teammates
@@ -150,8 +148,9 @@ Each brief is, in order:
 1. `shared.md`, verbatim;
 2. the role brief, verbatim;
 3. the intent line;
-4. the owner's words for this task, verbatim, and the taste principles;
-5. exact paths to the files it needs.
+4. the owner's words for this task, verbatim;
+5. `principles.md`, verbatim;
+6. exact paths to the files it needs.
 
 Teammates can't see this conversation or each other. Never paraphrase the
 owner or add your own adjectives. Never brief from stale sources: old

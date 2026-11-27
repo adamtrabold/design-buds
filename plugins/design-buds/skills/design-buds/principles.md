@@ -1,9 +1,4 @@
----
-name: adam-taste
-description: Adam's design principles, true across every project. Read with design-buds before briefing or judging design or visual work.
----
-
-# Adam's design principles
+# Design principles
 
 These hold for every project. Project-specific direction lives in that
 project's records, not here.
@@ -45,4 +40,5 @@ project's records, not here.
   nothing private, no names, nothing tied to one project.
 - To change it: edit this file and push to `main` if the session can (the
   owner has asked for that); otherwise give the owner the new line, ready
-  to paste.
+  to paste. Anyone using design-buds for themselves replaces these with
+  their own.

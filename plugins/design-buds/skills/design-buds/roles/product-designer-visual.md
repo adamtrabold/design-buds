@@ -40,7 +40,7 @@ round needs.
 
 ## What you get
 
-The intent line, the owner's words, the taste principles, paths to the work's
+The intent line, the owner's words, the design principles, paths to the work's
 files, and the director's review after each round.
 
 ## Rules

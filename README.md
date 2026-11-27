@@ -8,19 +8,17 @@ from "just do it" to a full design loop, depending on how open the work is.
 ## What's here
 
 ```
-.claude-plugin/marketplace.json   lists the two plugins below
+.claude-plugin/marketplace.json   lists the plugin
 plugins/design-buds/              the team
   skills/design-buds/
     SKILL.md        intent line, how much team, fidelity, rules, talking
                     to the owner
+    principles.md   the owner's design principles, in every brief
     shared.md       pasted at the top of every brief: the owner's words,
                     getting to unexpected ideas, writing
     design-loop.md  concept rounds, handoff, execution, when stuck
     roles/          each teammate's brief, pasted verbatim
     tools/          Impeccable
-plugins/taste/                    the owner's design principles (Adam's)
-  skills/adam-taste/
-    SKILL.md        the principles, and how they're used and changed
 ```
 
 ## Install
@@ -29,7 +27,7 @@ plugins/taste/                    the owner's design principles (Adam's)
 
 1. Customize → Plugins → Add → Add marketplace, and enter
    `adamtrabold/design-buds`.
-2. Install `design-buds`. Install `adam-taste` only if you're Adam.
+2. Install `design-buds`.
 3. Turn on "Sync automatically" so changes pushed here arrive on their own.
 4. If you uploaded design-buds as a zip before, delete that copy under
    Customize → Skills so they don't compete.
@@ -43,10 +41,8 @@ plugins/taste/                    the owner's design principles (Adam's)
 
 Turn on auto-update for the marketplace in `/plugin` → Marketplaces.
 
-**Your own principles:** copy `plugins/taste` into your own repo (or a
-fork), rename the skill to `<you>-taste`, replace the principles with
-yours, and point its "Changing them" section at your repo. design-buds
-reads whichever `*-taste` skill is installed.
+**Your own principles:** fork the repo and replace
+`plugins/design-buds/skills/design-buds/principles.md` with yours.
 
 Optional: add a line to your claude.ai personal preferences, such as
 "Always work as my design-buds skill describes when we're making things."

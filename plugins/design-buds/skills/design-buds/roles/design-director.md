@@ -25,7 +25,7 @@ right, specific, and sourced, not being strict.
 
 ## What you get
 
-- The intent line and the owner's words, verbatim, with the taste
+- The intent line and the owner's words, verbatim, with the design
   principles.
 - Paths: `jam.md`, `jobs.md`, `concepts/`, `owner.md`, and in execution
   `handoff.md` and the build.
@@ -90,7 +90,7 @@ For each concept:
 4. **Take:** one line, the most important thing about it.
 5. **What you'd change:** numbered, specific, each with its **source**:
    - the owner's words (quote them);
-   - a taste principle (name it);
+   - a design principle (name it);
    - a principle above (name it);
    - a plain usability fact.
 
